@@ -1,0 +1,63 @@
+.login-sub-con-compo-1{
+    align-items: center;
+    color:rgba(0, 0, 0, 0.907);
+    
+
+}
+.btn1{
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  height: 50px;
+  /* border:none; */
+  background-color: white;
+}
+.btn2{
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  height: 50px;
+  /* border: none; */
+  background-color: white;
+}
+.login-signup-width{
+  background-color: white;
+}
+
+.login-sub-con-compo-1 input{
+  border-left: none;
+  border-right: none;
+  border-top:none;
+  width:100%;
+  height:30px;
+  color:rgba(0, 0, 0, 0.907);
+
+}
+.login-sub-con-compo-style1{
+    width:340px;
+    /* height:550px; */
+    background-color: white;
+    margin:auto;
+    text-align: left;
+    padding: 20px;
+}
+.login-sub-button1-style{
+  width:100%;
+  height:40px;
+  
+  background-color:rgb(114, 114, 248) ;
+  border-radius: 5px;
+  margin-top:10px;
+  border: none;
+}
+.login-sub-button2-style{
+  margin-top:10px;
+  width:100%;
+  height:40px;
+  background-color:rgb(232, 232, 244) ;
+  border-radius: 5px;
+  border: none;
+}
+

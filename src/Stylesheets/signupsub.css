@@ -1,0 +1,57 @@
+.login-sub-con-compo-1{
+    align-items: center;
+    color:rgba(0, 0, 0, 0.907);
+
+}
+.input1{
+  border-left: none;
+  border-right: none;
+  border-top:none;
+  width:100%;
+  height:30px;
+  color:rgba(0, 0, 0, 0.907);
+
+}
+.input2{
+    text-align: left;
+    border-left: none;
+    border-right: none;
+    border-top:none;
+    width:50px;
+    height:30px;
+    color:rgba(0, 0, 0, 0.907);
+  
+  }
+.check-box{
+    text-align: left;
+    width:5px;
+    height: 5px;
+}
+.coll-passing{
+    display: flex;
+    flex-direction: row;
+}
+.login-sub-con-compo-style1{
+    width:340px;
+    /* height:650px; */
+    background-color: white;
+    margin:auto;
+    text-align: left;
+}
+.login-sub-button1-style{
+  width:100%;
+  height:40px;
+  background-color:rgb(114, 114, 248) ;
+  border-radius: 5px;
+  margin-top:10px;
+  border: none;
+}
+.login-sub-button2-style{
+  margin-top:10px;
+  width:100%;
+  height:40px;
+  background-color:rgb(232, 232, 244) ;
+  border-radius: 5px;
+  border: none;
+}
+

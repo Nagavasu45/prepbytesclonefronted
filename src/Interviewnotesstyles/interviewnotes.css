@@ -1,0 +1,183 @@
+.interviewnotes-main-container {
+    padding-top: 10%;
+    background: linear-gradient(
+        190deg,
+        rgb(115, 115, 245) 0%,
+        rgb(115, 115, 245) 50%,                                                                 
+        white 50%,
+        white 100%
+    );
+}
+.browse-companys{
+    width:30%;
+    /* border: 1px solid black; */
+    padding-top:5% ;
+    padding-right: 5%;
+
+}
+.interviewnotes-sub-con-1 {
+    /* border: 2px solid black; */
+    display: flex;
+    /* Add flex properties as needed */
+}
+
+.browse-topics {
+    /* padding: 3%; */
+    width: 65%;
+    padding: 5%;
+    /* border: 2px solid black; */
+    
+}
+.browse-topics-1 {
+    /* padding: 3%; */
+    width: 100%;
+    background-color: white;
+    
+    /* border: 2px solid black; */
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px -2px 2px -2px rgba(237, 233, 233, 0.45),
+                2px 0px 10px -2px rgba(0,0,0,0.45),
+                0px 2px 10px -2px rgba(0,0,0,0.45),
+                -2px 0px 2px -2px rgba(0,0,0,0.45);
+                padding-bottom: 5%;
+}
+
+.text-line-interview {
+    background-color: rgb(147, 147, 248);
+    
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    color: white;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: center;
+    font-size: 25px;
+    /* font-weight: 400; */
+}
+
+.browse-topics-sub-con {
+    width: 100%;
+    display: flex;
+    padding: auto;
+    margin-top: 10%;
+    
+    justify-content:space-evenly;
+    /* margin-top: 30px; */
+    /* border: 2px solid red; */
+}
+
+.small-topic-container {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 170px;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px -2px 2px -2px rgba(237, 233, 233, 0.45),
+                2px 0px 10px -2px rgba(0,0,0,0.45),
+                0px 2px 10px -2px rgba(0,0,0,0.45),
+                -2px 0px 2px -2px rgba(0,0,0,0.45);
+}
+
+.yellow-topic-sub {
+    border-radius: 50px 50px 0px 0px;
+    background-color: rgb(255, 234, 0);
+    height: 70px;
+}
+
+.yellow-topic-sub-down {
+    width: 150px;
+    margin-top: 30px;
+    height: 100px;
+    font-size: 20px;
+}
+.browse-comapanys-sub{
+    /* padding-top: 10%; */
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px -2px 2px -2px rgba(237, 233, 233, 0.45),
+                2px 0px 10px -2px rgba(0,0,0,0.45),
+                0px 2px 10px -2px rgba(0,0,0,0.45),
+                -2px 0px 2px -2px rgba(0,0,0,0.45);
+}
+.browse-comapanys-sub-1{
+    background-color: rgb(147, 147, 248);
+    padding-top: 20px;
+    width: 100%;
+    height: 50px;
+    
+    color: white;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+.browse-comapanys-sub-2{
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 4px 4px 0px;
+    display: flex;
+    margin:10px;
+    height:57.5px;
+    /* padding: 5%; */
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px -2px 2px -2px rgba(237, 233, 233, 0.45),
+                2px 0px 10px -2px rgba(0,0,0,0.45),
+                0px 2px 10px -2px rgba(0,0,0,0.45),
+                -2px 0px 2px -2px rgba(0,0,0,0.45);
+}
+.colored-box-1{
+    width:15px;
+    
+    background-color: rgb(147, 147, 248);
+    color: white;
+    text-align: left;
+    margin-left: 0%;
+
+}
+.colored-box-right-text-1{
+    padding-left:100px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-2{
+    padding-left:120px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-3{
+    padding-left:110px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-4{
+    padding-left:100px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-5{
+    padding-left:70px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-6{
+    padding-left:110px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-7{
+    padding-left:100px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
+.colored-box-right-text-8{
+    padding-left:125px;
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.825);
+}
