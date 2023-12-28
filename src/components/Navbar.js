@@ -9,30 +9,9 @@ import axios from 'axios';
 const Navbar = () => {
     const [loginout, setloginout] = useState(false);
     const navigate=useNavigate();
-
-    // const token = localStorage.getItem("token");
-    // console.log(token)
-    
-    // useEffect(() => {
-    //     console.log(".....login-------------------------------")
-    //     if (token) {
-    //         console.log(".....login-------------------------------")
-    //         axios.get("http://localhost:3410/auth", { headers: { "authorization": `Bearer ${token}` } }) 
-    //             .then((res) => {
-    //                 console.log(res.data.msg);
-    //                 if (res.data.msg ==="User Autherized") {
-
-    //                     console.log("__________")
-
-    //                     setloginout(true);
-    //                     console.log(loginout)
-                        
-
-    //                 }
-    //             })
-    //             .catch(err => console.log(err))
-    //     }
-    // }, [token,navigate])
+    const temp=localStorage.getItem("selfname")
+    console.log(temp)
+   const [profilename,setprofilename]=useState("hi")
     const token = localStorage.getItem("token");
     //console.log(token)
     useEffect(() => {
@@ -42,19 +21,26 @@ const Navbar = () => {
               .then((res) => {
                   console.log(res.data.msg);
                   if (res.data.msg ==="User Authorized") {
-                    setloginout(true);
+                        setloginout(true);
+                        setprofilename(localStorage.getItem("selfname").substring(0, 5))
+                        navigate("/")
                     
 
-                }
-                else{
-                    console.log(res.data.msg)
-
-                }
+                }                
               })
               .catch(err => console.log(err))
       }
       
-  }, [token, navigate])
+  }, [token])
+  const selfdashboard=()=>{
+    navigate("/Selfinfo")
+  }
+  const logoutbtn=()=>{
+    localStorage.clear()
+    setloginout(false)
+    navigate('/')
+  }
+
   return(<>
     <div className='home-main-container-1'>
         <div className='header-container'>
@@ -73,7 +59,8 @@ const Navbar = () => {
             <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
             <div className="dropdown-content">
                 <NavLink to="/Interviewnotes">Interview Notes</NavLink>
-                <a href="#">Mock Tests</a>
+                <NavLink to='/Mocktests'>Mock Tests</NavLink>
+                
                 <a href="#">Video Tutorial</a>
             </div>
       </div>
@@ -110,12 +97,12 @@ const Navbar = () => {
       {loginout ? (
     <div>
       <button className="dropbtn">
-        <span className="text-round-style">G</span>
-        <span className="text-normal-style">hi garikipati</span>
+        <span className="text-round-style">hi</span>
+        <span className="text-normal-style">{profilename} </span>
       </button>
       <div className="dropdown-content">
-        <a href="#">Dashboard</a>
-        <a href="#">logout/signout</a>
+        <li><button onClick={selfdashboard}>Dashboard</button></li>
+        <li><button onClick={logoutbtn}>Logout</button></li>
       </div>
       </div>
     

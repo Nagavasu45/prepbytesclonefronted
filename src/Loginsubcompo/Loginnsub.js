@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import "../Stylesheets/loginsub.css"
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Loginnsub = () => {
+  const navigate=useNavigate()
     const [ldata,ldataset]=useState({         
         email:"",        
         password:"",       
@@ -22,10 +24,16 @@ const Loginnsub = () => {
             
             
             if (res.data.msg === "your login successfully") {
-              localStorage.setItem("token", res.data.token);
-              console.log(res.data.token)
+                localStorage.setItem("token", res.data.token);
+                console.log(res.data.token)
+                console.log(res.data.userdetail.username)
+                console.log(res.data.userdetail.email)
+                localStorage.setItem("selfname",res.data.userdetail.username)
+                localStorage.setItem("selfdetails",res.data.userdetail.email)
               
-              alert(res.data.msg)
+                alert(res.data.msg)
+                navigate('/')
+                
               
           }
           else{

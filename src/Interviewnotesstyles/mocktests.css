@@ -1,0 +1,13 @@
+.mock-main-container{
+    padding-top: 20%;
+}
+.mock-sub-container{
+    border:1px solid blue;
+    
+}
+.mock-sub-items{
+    border:1px solid rgb(117, 117, 177);
+    width:150px;
+    height:100px;
+
+}

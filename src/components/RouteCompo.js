@@ -10,6 +10,10 @@ import Loginsignup from '../Loginsubcompo/Loginsignup'
 import Signuplogin from '../Loginsubcompo/Signuplogin'
 import Signup from './Signup'
 import Interviewnotes from '../study material/Interviewnotes'
+import Selfinfo from './Selfinfo'
+import Mocktests from '../study material/Mocktests'
+import Success from './Success'
+import Cancel from './Cancel'
 
 
 
@@ -31,7 +35,10 @@ const RouteCompo = () => {
     <Route path='/Loginsignup' element={<Loginsignup />}/>
     <Route path='/Signuplogin' element={<Signuplogin />}/>
     <Route path='/Interviewnotes' element={<Interviewnotes /> }/>    
-    
+    <Route path='/Selfinfo' element={<Selfinfo />}/>
+    <Route path='/Mocktests' element={<Mocktests />}/>
+    <Route path='/Success' element={<Success />}/>
+    <Route path='/Cancel' element={<Cancel />}/>
     <Route path="/Footer" element={<Footer />}/>
   </Routes>
   <Footer />
