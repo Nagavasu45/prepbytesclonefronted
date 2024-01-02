@@ -20,9 +20,9 @@ const Signupsub = () => {
       };
       const datasubmit=(e)=>{
         e.preventDefault()
-        // https://nodehanson4.onrender.com/registerpage
+        
         axios
-          .post('http://localhost:3410/register',rdata)
+          .post('https://prepbytesclonebackend.onrender.com/register',rdata)
           .then((res) => {
             
             // setStore(res.data.msg);

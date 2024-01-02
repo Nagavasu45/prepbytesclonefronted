@@ -17,7 +17,7 @@ const Navbar = () => {
     useEffect(() => {
       if (token) {
         console.log(token);
-          axios.get("http://localhost:3410/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+          axios.get("https://prepbytesclonebackend.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
               .then((res) => {
                   console.log(res.data.msg);
                   if (res.data.msg ==="User Authorized") {

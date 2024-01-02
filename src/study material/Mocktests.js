@@ -16,7 +16,7 @@ const Mocktests = () => {
       useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.post('http://localhost:3410/compltdata');
+            const response = await axios.post('https://prepbytesclonebackend.onrender.com/compltdata');
             setbooksdata(response.data);
             console.log(response.data);
           } catch (error) {
@@ -50,7 +50,7 @@ const headers={
   "content-Type":"application/json"
 }
 try {
-  const response = await fetch("http://localhost:3410/createcheckout1", {
+  const response = await fetch("https://prepbytesclonebackend.onrender.com/createcheckout1", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(body),
