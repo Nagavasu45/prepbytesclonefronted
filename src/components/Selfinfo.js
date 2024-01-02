@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Stylesheets/selfinfo.css"
 import { NavLink } from 'react-router-dom'
-import { FaDoorClosed } from 'react-icons/fa'
+
 
 
 const Selfinfo = () => {

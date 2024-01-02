@@ -49,7 +49,7 @@
     
     
 }
-a{
+NavLink{
     text-decoration: none;
     color:rgb(49, 48, 48);
     font-size: 16px;
@@ -150,7 +150,7 @@ a{
         margin-bottom: 1rem;
         
     }
-    a{
+    NavLink{
         text-decoration: none;
         color:rgb(73, 72, 72);
         font-size: 16px;

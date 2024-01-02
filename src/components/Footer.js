@@ -3,6 +3,7 @@ import { FaCopyright, FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaYoutube
 import {LuPhoneCall } from "react-icons/lu";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import "../Stylesheets/footer.css";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -31,22 +32,22 @@ const Footer = () => {
         <div className='margin-align-1'>LATEST ARTICLES</div>
         
         <div className='margin-align-2'>
-        <a href='#'>find Command in linux with Examples</a><br/>
-    <a href='#'>awk Command in unix/Linux Examples</a><br/>
-    <a href='#'>grep Command in unix/Linux </a><br/>
-    <a href='#'>ps Command in unix/Linux Examples</a><br/>
-    <a href='#'>curl Command in Linux with Examples</a><br/>
+        <NavLink>find Command in linux with Examples</NavLink><br/>
+        <NavLink>awk Command in unix/Linux Examples</NavLink><br/>
+        <NavLink>grep Command in unix/Linux </NavLink><br/>
+    <NavLink>ps Command in unix/Linux Examples</NavLink><br/>
+    <NavLink>curl Command in Linux with Examples</NavLink><br/>
     
     </div>
     
     <div className='margin-align-3'>POPULAR ARTICLES</div>
     
     <div className='margin-align-2'>
-        <a href='#'>ifconfig Command in linux with Examples</a><br/>
-    <a href='#'>Touch Command in Linux with Examples</a><br/>
-    <a href='#'>ssh Command in Linux with Examples </a><br/>
-    <a href='#'>screen Command in Linux with Examples</a><br/>
-    <a href='#'>netstat Command in Linux </a><br/>
+        <NavLink>ifconfig Command in linux with Examples</NavLink><br/>
+    <NavLink>Touch Command in Linux with Examples</NavLink><br/>
+    <NavLink>ssh Command in Linux with Examples </NavLink><br/>
+    <NavLink>screen Command in Linux with Examples</NavLink><br/>
+    <NavLink>netstat Command in Linux </NavLink><br/>
     
     </div>
     </div>
@@ -54,13 +55,13 @@ const Footer = () => {
     <div className='margin-align-1'>QUICK LINKS</div>
     
     <div className='margin-align-2'>
-    <a href='#'>Interview Notes</a><br/>
-    <a href='#'>Mock Tests</a><br/>
-    <a href='#'>Placement</a><br/>
-    <a href='#'>Programs</a><br/>
-    <a href='#'>Coding Courses</a><br/>
-    <a href='#'>About Us</a><br/>
-    <a href='#'>Blog</a><br/>
+    <NavLink>Interview Notes</NavLink><br/>
+    <NavLink>Mock Tests</NavLink><br/>
+    <NavLink>Placement</NavLink><br/>
+    <NavLink>Programs</NavLink><br/>
+    <NavLink>Coding Courses</NavLink><br/>
+    <NavLink>About Us</NavLink><br/>
+    <NavLink>Blog</NavLink><br/>
     </div>
     
     

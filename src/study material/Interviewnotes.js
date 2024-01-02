@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Interviewnotesstyles/interviewnotes.css"
+import { NavLink } from 'react-router-dom'
 
 const Interviewnotes = () => {
   return (<>
@@ -68,35 +69,35 @@ const Interviewnotes = () => {
             </div>
             <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-1'><a href='#'>Samsung</a></div>
+                <div className='colored-box-right-text-1'><NavLink>Samsung</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-2'><a href='#'>Hcl</a></div>
+                <div className='colored-box-right-text-2'><NavLink>Hcl</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-3'><a href='#'>Oracle</a></div>
+                <div className='colored-box-right-text-3'><NavLink>Oracle</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-4'><a href='#'>Cognizant</a></div>
+                <div className='colored-box-right-text-4'><NavLink>Cognizant</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-5'><a href='#'>Mahindra-comviva</a></div>
+                <div className='colored-box-right-text-5'><NavLink>Mahindra-comviva</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-6'><a href='#'>Infoedge</a></div>
+                <div className='colored-box-right-text-6'><NavLink>Infoedge</NavLink></div>
                 </div>
             <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-7'><a href='#'>I&t-infotech</a></div>
+                <div className='colored-box-right-text-7'><NavLink>I&t-infotech</NavLink></div>
                 </div>
                 <div className='browse-comapanys-sub-2'>
                 <div className='colored-box-1'></div>
-                <div className='colored-box-right-text-8'><a href='#'>Cisco</a></div>
+                <div className='colored-box-right-text-8'><NavLink>Cisco</NavLink></div>
                 </div>
 
             </div>

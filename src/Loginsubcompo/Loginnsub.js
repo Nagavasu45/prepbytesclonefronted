@@ -71,7 +71,7 @@ const Loginnsub = () => {
                     
                     
                     <br/>
-                    <a href='#'>Forgot your password?</a><br/>
+                    <div>Forgot your password?</div>
                     <div><button className='login-sub-button1-style' onClick={datasubmit}>SIGN IN</button></div>
                     <div><button className='login-sub-button2-style'>Login Via OTP</button></div>
                 </form>
