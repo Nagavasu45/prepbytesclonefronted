@@ -49,12 +49,7 @@
     
     
 }
-.margin-align-2 NavLink{
-    text-decoration: none;
-    color:rgb(49, 48, 48);
-    font-size: 16px;
-    letter-spacing: 0.1rem;
-}
+
 .footer-hr{
    
     
@@ -95,6 +90,11 @@
     color:white;
    
 
+}
+
+.footer-navlink-style{
+    text-decoration: none;
+    color:rgb(57, 57, 57);
 }
 @media only screen  and (min-width:340px) and (max-width:750px){
     .footer-main-container{

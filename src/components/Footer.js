@@ -32,22 +32,22 @@ const Footer = () => {
         <div className='margin-align-1'>LATEST ARTICLES</div>
         
         <div className='margin-align-2'>
-        <NavLink>find Command in linux with Examples</NavLink><br/>
-        <NavLink>awk Command in unix/Linux Examples</NavLink><br/>
-        <NavLink>grep Command in unix/Linux </NavLink><br/>
-    <NavLink>ps Command in unix/Linux Examples</NavLink><br/>
-    <NavLink>curl Command in Linux with Examples</NavLink><br/>
+        <NavLink className="footer-navlink-style">find Command in linux with Examples</NavLink><br/>
+        <NavLink className="footer-navlink-style">awk Command in unix/Linux Examples</NavLink><br/>
+        <NavLink className="footer-navlink-style">grep Command in unix/Linux </NavLink><br/>
+    <NavLink className="footer-navlink-style">ps Command in unix/Linux Examples</NavLink><br/>
+    <NavLink className="footer-navlink-style">curl Command in Linux with Examples</NavLink><br/>
     
     </div>
     
     <div className='margin-align-3'>POPULAR ARTICLES</div>
     
     <div className='margin-align-2'>
-        <NavLink>ifconfig Command in linux with Examples</NavLink><br/>
-    <NavLink>Touch Command in Linux with Examples</NavLink><br/>
-    <NavLink>ssh Command in Linux with Examples </NavLink><br/>
-    <NavLink>screen Command in Linux with Examples</NavLink><br/>
-    <NavLink>netstat Command in Linux </NavLink><br/>
+        <NavLink className="footer-navlink-style">ifconfig Command in linux with Examples</NavLink><br/>
+    <NavLink className="footer-navlink-style">Touch Command in Linux with Examples</NavLink><br/>
+    <NavLink className="footer-navlink-style">ssh Command in Linux with Examples </NavLink><br/>
+    <NavLink className="footer-navlink-style">screen Command in Linux with Examples</NavLink><br/>
+    <NavLink className="footer-navlink-style">netstat Command in Linux </NavLink><br/>
     
     </div>
     </div>
@@ -55,13 +55,13 @@ const Footer = () => {
     <div className='margin-align-1'>QUICK LINKS</div>
     
     <div className='margin-align-2'>
-    <NavLink>Interview Notes</NavLink><br/>
-    <NavLink>Mock Tests</NavLink><br/>
-    <NavLink>Placement</NavLink><br/>
-    <NavLink>Programs</NavLink><br/>
-    <NavLink>Coding Courses</NavLink><br/>
-    <NavLink>About Us</NavLink><br/>
-    <NavLink>Blog</NavLink><br/>
+    <NavLink className="footer-navlink-style">Interview Notes</NavLink><br/>
+    <NavLink className="footer-navlink-style">Mock Tests</NavLink><br/>
+    <NavLink className="footer-navlink-style">Placement</NavLink><br/>
+    <NavLink className="footer-navlink-style">Programs</NavLink><br/>
+    <NavLink className="footer-navlink-style">Coding Courses</NavLink><br/>
+    <NavLink className="footer-navlink-style">About Us</NavLink><br/>
+    <NavLink className="footer-navlink-style">Blog</NavLink><br/>
     </div>
     
     

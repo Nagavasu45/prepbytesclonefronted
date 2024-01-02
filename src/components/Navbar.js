@@ -50,8 +50,8 @@ const Navbar = () => {
 
             </div>
             </div>
-           {loginout ? <></>: <div className='header-login-signup-buttons'> <button id='login'><NavLink to='/Login'>Login</NavLink></button>
-                                                          <button id='signup'><NavLink to='/Signup'>Sign up</NavLink></button></div>}
+           {loginout ? <></>: <div className='header-login-signup-buttons'> <button id='login' ><NavLink to='/Login' className='text-style-navlink'>Login</NavLink></button>
+                                                          <button id='signup'><NavLink to='/Signup' className='text-style-navlink'>Sign up</NavLink></button></div>}
         </div>
         <div className='nav-bar-lists'>
         
