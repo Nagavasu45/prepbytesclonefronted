@@ -14,10 +14,16 @@ import Selfinfo from './Selfinfo'
 import Mocktests from '../study material/Mocktests'
 import Success from './Success'
 import Cancel from './Cancel'
-
-
-
-
+import Videotuto from '../study material/Videotuto'
+import Master from '../coursesandprograms/Master'
+import Fullstack from '../coursesandprograms/Fullstack'
+import Htmlprojects from "../Project/Htmlprojects"
+import Cssprojects from "../Project/Cssprojects"
+import Javascriptprojects from "../Project/Javascriptprojects"
+import Reactjsprojects from "../Project/Reactjsprojects"
+import Nodejsprojects from "../Project/Nodejsprojects"
+import Mongodbprojects from "../Project/Mongodbprojects"
+import Elevationacedemy from '../elevation/Elevationacedemy'
 
 
 const RouteCompo = () => {
@@ -40,6 +46,17 @@ const RouteCompo = () => {
     <Route path='/Success' element={<Success />}/>
     <Route path='/Cancel' element={<Cancel />}/>
     <Route path="/Footer" element={<Footer />}/>
+    <Route path="/Videotuto" element={<Videotuto />}/>
+    <Route path='/Master' element={<Master />}/>
+    <Route path='/Fullstack' element={<Fullstack />}/>
+    <Route path='/Htmlprojects' element={<Htmlprojects />}/>
+    <Route path='/Cssprojects'  element={<Cssprojects />}/>
+    <Route path='/Javascript' element={<Javascriptprojects />}/>
+    <Route path='/Mongodbprojects' element={<Mongodbprojects />}/>
+    <Route path='/Reactjsprojects' element={<Reactjsprojects />}/>
+    <Route path='/Nodejsprojects' element={<Nodejsprojects />}/>
+    <Route path='/Elevationacedemy' element={<Elevationacedemy />}/>
+    
   </Routes>
   <Footer />
   </BrowserRouter>

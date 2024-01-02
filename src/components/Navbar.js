@@ -31,7 +31,7 @@ const Navbar = () => {
               .catch(err => console.log(err))
       }
       
-  }, [token])
+  }, [token,navigate])
   const selfdashboard=()=>{
     navigate("/Selfinfo")
   }
@@ -61,54 +61,63 @@ const Navbar = () => {
                 <NavLink to="/Interviewnotes">Interview Notes</NavLink>
                 <NavLink to='/Mocktests'>Mock Tests</NavLink>
                 
-                <a href="#">Video Tutorial</a>
+                <NavLink to="/Videotuto">Video Tutorials</NavLink>
             </div>
       </div>
       <div className="dropdown">
             <button className="dropbtn">Courses and Programs <FontAwesomeIcon icon={faCaretDown} /></button>
             <div className="dropdown-content">
-                <a href="#">Placement Programs</a>
-                <a href="#">Master Competitive Programming</a>
-                <a href="#">Full Stack Program</a>
+                <NavLink to="/Master">Master Competitive Programming</NavLink>
+                <NavLink to="/Fullstack">Full Stack Program</NavLink>
+                {/* <a href="#">Master Competitive Programming</a>
+                <a href="#">Full Stack Program</a> */}
             </div>
       </div>
       
       <div className="dropdown">
-      <a href="#"><button className="dropbtn">Elevation Academy</button></a>
+      <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
             
       </div>
       
       
 
       <div className="dropdown">
-            <button className="dropbtn">Blog <FontAwesomeIcon icon={faCaretDown} /></button>
+            <button className="dropbtn">Project <FontAwesomeIcon icon={faCaretDown} /></button>
             <div className="dropdown-content">
-                <a href="#">HTML </a>
+              <NavLink to="/Htmlprojects">HTML</NavLink>
+              <NavLink to="/Cssprojects">CSS</NavLink>
+              <NavLink to="/Javascriptprojects">JavaScript</NavLink>
+              <NavLink to="/Reactjsprojects">React js</NavLink>
+              <NavLink to="/Nodejsprojects">Node js</NavLink>
+              <NavLink to="/Mongodbprojects">MongoDB</NavLink>
+                {/* <a href="#">HTML </a>
                 <a href="#">CSS</a>
                 <a href="#">JavaScript</a>
                 <a href="#">React JS</a>
                 <a href="#">Node JS</a>
-                <a href="#">MongoDB</a>     
+                <a href="#">MongoDB</a>  */}
+                {/* <button  className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
+                <button  className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>     */}
 
 
             </div>
       </div>
-      <div className="dropdown">
+      
       {loginout ? (
-    <div>
+    <div className="dropdown">
       <button className="dropbtn">
         <span className="text-round-style">hi</span>
         <span className="text-normal-style">{profilename} </span>
       </button>
       <div className="dropdown-content">
-        <li><button onClick={selfdashboard}>Dashboard</button></li>
-        <li><button onClick={logoutbtn}>Logout</button></li>
+        <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
+        <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
       </div>
       </div>
     
   ) : " "}
            
-      </div>
+      
        
 
              </div>

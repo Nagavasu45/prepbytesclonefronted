@@ -16,6 +16,7 @@ const Footer = () => {
     <FaInstagramSquare  style={{color:'rgb(223, 78, 52)', height:'28px',width:'28px'}}/>
     <FaLinkedin  style={{color:'rgb(80, 106, 223)', height:'28px',width:'28px'}}/>
     <FaYoutubeSquare  style={{color:'red', height:'28px',width:'28px'}}/>
+    
     </div>
     <br/>
     <br/>
