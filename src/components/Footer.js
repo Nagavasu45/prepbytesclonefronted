@@ -76,7 +76,7 @@ const Footer = () => {
       <span className='last-line'>Privacy Policy </span> <span className='last-line'>Refund Policy</span><span className='last-line'>Terms Of Use</span>
     </div>
     
-    <div className='request-call-line'> Need Help? Talk to us on 079 6900 2111 or <a href="#" className='request-call-line-sub'>Request Callback</a></div>
+    <div className='request-call-line'> Need Help? Talk to us on 079 6900 2111 or <NavLink className='request-call-line-sub'>Request Callback</NavLink></div>
     </> )
 }
 
