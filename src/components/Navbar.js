@@ -9,6 +9,7 @@ import axios from 'axios';
 const Navbar = () => {
     const [loginout, setloginout] = useState(false);
     const navigate=useNavigate();
+    
     const temp=localStorage.getItem("selfname")
     console.log(temp)
    const [profilename,setprofilename]=useState("hi")
@@ -53,74 +54,135 @@ const Navbar = () => {
            {loginout ? <></>: <div className='header-login-signup-buttons'> <button id='login' ><NavLink to='/Login' className='text-style-navlink'>Login</NavLink></button>
                                                           <button id='signup'><NavLink to='/Signup' className='text-style-navlink'>Sign up</NavLink></button></div>}
         </div>
-        <div className='nav-bar-lists'>
+        {loginout ?(<div className='nav-bar-lists1'>
         
-            <div className="dropdown">
-            <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
-            <div className="dropdown-content">
-                <NavLink to="/Interviewnotes">Interview Notes</NavLink>
-                <NavLink to='/Mocktests'>Mock Tests</NavLink>
-                
-                <NavLink to="/Videotuto">Video Tutorials</NavLink>
-            </div>
-      </div>
-      <div className="dropdown">
-            <button className="dropbtn">Courses and Programs <FontAwesomeIcon icon={faCaretDown} /></button>
-            <div className="dropdown-content">
-                <NavLink to="/Master">Master Competitive Programming</NavLink>
-                <NavLink to="/Fullstack">Full Stack Program</NavLink>
-                {/* <a href="#">Master Competitive Programming</a>
-                <a href="#">Full Stack Program</a> */}
-            </div>
-      </div>
-      
-      <div className="dropdown">
-      <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
+        <div className="dropdown">
+        <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+            <NavLink to="/Interviewnotes">Interview Notes</NavLink>
+            <NavLink to='/Mocktests'>Mock Tests</NavLink>
             
-      </div>
-      
-      
+            <NavLink to="/Videotuto">Video Tutorials</NavLink>
+        </div>
+  </div>
+  <div className="dropdown">
+        <button className="dropbtn">Courses and Programs <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+            <NavLink to="/Master">Master Competitive Programming</NavLink>
+            <NavLink to="/Fullstack">Full Stack Program</NavLink>
+            {/* <a href="#">Master Competitive Programming</a>
+            <a href="#">Full Stack Program</a> */}
+        </div>
+  </div>
+  
+  <div className="dropdown">
+  <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
+        
+  </div>
+  
+  
 
-      <div className="dropdown">
-            <button className="dropbtn">Project <FontAwesomeIcon icon={faCaretDown} /></button>
-            <div className="dropdown-content">
-              <NavLink to="/Htmlprojects">HTML</NavLink>
-              <NavLink to="/Cssprojects">CSS</NavLink>
-              <NavLink to="/Javascriptprojects">JavaScript</NavLink>
-              <NavLink to="/Reactjsprojects">React js</NavLink>
-              <NavLink to="/Nodejsprojects">Node js</NavLink>
-              <NavLink to="/Mongodbprojects">MongoDB</NavLink>
-                {/* <a href="#">HTML </a>
-                <a href="#">CSS</a>
-                <a href="#">JavaScript</a>
-                <a href="#">React JS</a>
-                <a href="#">Node JS</a>
-                <a href="#">MongoDB</a>  */}
-                {/* <button  className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
-                <button  className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>     */}
+  <div className="dropdown">
+        <button className="dropbtn">Project <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+          <NavLink to="/Htmlprojects">HTML</NavLink>
+          <NavLink to="/Cssprojects">CSS</NavLink>
+          <NavLink to="/Javascriptprojects">JavaScript</NavLink>
+          <NavLink to="/Reactjsprojects">React js</NavLink>
+          <NavLink to="/Nodejsprojects">Node js</NavLink>
+          <NavLink to="/Mongodbprojects">MongoDB</NavLink>
+            
 
+        </div>
+  </div>
+  
+  {loginout ? (
+<div className="dropdown">
+  <div>
+  <div className="dropbtn">
+    <div className='navbar-name-size'>
+    <div className="text-round-style">{temp[0].toUpperCase()}</div>
+    <div className="text-normal-style">{profilename} </div>
+    </div>
+  </div>
+  </div>
+  <div className="dropdown-content">
+    <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
+    <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
+  </div>
+  
+  </div>
 
-            </div>
-      </div>
-      
-      {loginout ? (
-    <div className="dropdown">
-      <button className="dropbtn">
-        <span className="text-round-style">hi</span>
-        <span className="text-normal-style">{profilename} </span>
-      </button>
-      <div className="dropdown-content">
-        <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
-        <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
-      </div>
-      </div>
-    
-  ) : " "}
-           
-      
+) : " "}
        
+  
+   
 
-             </div>
+         </div> ): 
+         (<div className='nav-bar-lists'>
+        
+        <div className="dropdown">
+        <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+            <NavLink to="/Interviewnotes">Interview Notes</NavLink>
+            <NavLink to='/Mocktests'>Mock Tests</NavLink>
+            
+            <NavLink to="/Videotuto">Video Tutorials</NavLink>
+        </div>
+  </div>
+  <div className="dropdown">
+        <button className="dropbtn">Courses and Programs <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+            <NavLink to="/Master">Master Competitive Programming</NavLink>
+            <NavLink to="/Fullstack">Full Stack Program</NavLink>
+            {/* <a href="#">Master Competitive Programming</a>
+            <a href="#">Full Stack Program</a> */}
+        </div>
+  </div>
+  
+  <div className="dropdown">
+  <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
+        
+  </div>
+  
+  
+
+  <div className="dropdown">
+        <button className="dropbtn">Project <FontAwesomeIcon icon={faCaretDown} /></button>
+        <div className="dropdown-content">
+          <NavLink to="/Htmlprojects">HTML</NavLink>
+          <NavLink to="/Cssprojects">CSS</NavLink>
+          <NavLink to="/Javascriptprojects">JavaScript</NavLink>
+          <NavLink to="/Reactjsprojects">React js</NavLink>
+          <NavLink to="/Nodejsprojects">Node js</NavLink>
+          <NavLink to="/Mongodbprojects">MongoDB</NavLink>
+            
+
+        </div>
+  </div>
+  
+  {loginout ? (
+<div className="dropdown">
+  <div>
+  <div className="dropbtn">
+    <span className="text-round-style">{temp[0].toUpperCase()}</span>
+    <span className="text-normal-style">{profilename} </span>
+  </div>
+  </div>
+  <div className="dropdown-content">
+    <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
+    <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
+  </div>
+  
+  </div>
+
+) : " "}
+       
+  
+   
+
+         </div>)}
+        
         
         
       
