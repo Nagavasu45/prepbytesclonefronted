@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../Stylesheets/selfinfo.css"
-import { NavLink, useNavigate } from 'react-router-dom'
+
 import axios from 'axios'
 
 
@@ -113,7 +113,7 @@ const Selfinfo = () => {
            }
          };
          buyData(); 
-            },[]);
+            },[boughtcourses]);
   return (<>
     <div className='dashboard-main-container'>
 
