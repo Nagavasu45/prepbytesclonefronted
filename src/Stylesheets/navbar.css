@@ -9,9 +9,19 @@
     box-shadow: 0 4px 5px -0px rgba(0, 0, 0, 0.064);
    
 }
+.header-container-sub-1{
+  display: flex;
+}
+.header-container-sub-1-item1{
+  /* width:200px; */
+  text-align: left;
+   margin-top: 25px; 
+   padding-left:20px;   
+   
+}
  .header-logo{     
      
-     text-align: left;
+     padding-left: 40px;
 }
 .header-login-signup-buttons{
      position: absolute;
@@ -20,9 +30,15 @@
 
     display: inline-block;
 } 
+.dashboard-menuhide{
+  position: relative;
+  height:100%;
+  top:50px;
+  left: 10px;
+}
 .logo-size{
     height: 75px;
-    width: 32%;
+    width: 100%;
 }
 #login{
     width: 68px;

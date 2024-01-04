@@ -50,7 +50,7 @@ const headers={
   "content-Type":"application/json"
 }
 try {
-  const response = await fetch("https://prepbytesclonebackend.onrender.com/createcheckout1", {
+  const response = await fetch("http://localhost:3410/createcheckout1", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(body),
