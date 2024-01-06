@@ -16,7 +16,7 @@ const Navbar = () => {
    
     
     // console.log(temp,loginout,"11111111")
-   const [profilename,setprofilename]=useState("hi")
+  //  const [profilename,setprofilename]=useState("hi")
     const token = localStorage.getItem("token");
     //console.log(token)
     useEffect(() => {

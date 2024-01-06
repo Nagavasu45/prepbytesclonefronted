@@ -58,7 +58,8 @@ const Selfinfo = () => {
     const logoutbtn3=()=>{
           localStorage.removeItem("selfname")
           localStorage.clear()
-          localStorage.setItem("loginhandle",false)
+          Setlocalname(null)
+          // localStorage.setItem("loginhandle",false)
          
           
         }
