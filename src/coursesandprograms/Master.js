@@ -200,7 +200,9 @@ const Master = () => {
         
        </div>
        <div className='hr-style'><hr/></div>
-       <div className='master-body-container9'>Crack Reputed Coding Contests</div>
+       <div className='master-body-container9'>Crack Reputed Coding Contests<br/>
+       <div><img className='master-body-container9-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/MCP-company-new.webp'  alt='not-loaded'/></div>
+       </div>
        <div className='master-body-container10'>This Might Be You!</div>
        <div className='master-body-container11'>By The End Of This Course, You Will Be Able To
        <div className='master-body-container11-sub-container'>
