@@ -228,8 +228,9 @@ color: rgba(0, 0, 0, 0.834);
     height: 70px;
     width:100%;
     border: 1px solid black;
-    align-items: start;
+    
     display: flex;
+    align-items: flex-start;
     position: relative;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -271,9 +272,9 @@ color: rgba(0, 0, 0, 0.834);
     height: 70px;
     width:100%;
     border: 1px solid black;
-    align-items: start;
+   
     display: flex;
-    
+    align-items: flex-start;
     margin-top: 15px;
     margin-bottom: 15px;
 
