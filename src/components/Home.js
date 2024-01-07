@@ -44,7 +44,7 @@ const Home = () => {
       </div>
       <div className='home-container3'>
         <div className='home-container3-sub1'>
-          <img className='home-container3-sub1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/stairs_of_approach(web).svg'/>
+          <img className='home-container3-sub1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/stairs_of_approach(web).svg' alt='not-loaded'/>
         </div>
         <div className='home-container3-sub2'>
           <div className='home-container3-sub2-text1'>How PrepBytes Mentorship driven Personalised Learning works?</div>
