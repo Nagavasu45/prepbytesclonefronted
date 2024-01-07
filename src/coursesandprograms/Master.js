@@ -204,7 +204,7 @@ const Master = () => {
        <div className='master-body-container10'>This Might Be You!</div>
        <div className='master-body-container11'>By The End Of This Course, You Will Be Able To
        <div className='master-body-container11-sub-container'>
-        <div><img  className="master-body-container11-sub-container-imgsize" src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vecto2.webp'/></div>
+        <div><img  className="master-body-container11-sub-container-imgsize" src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vecto2.webp' alt='not-loaded'/></div>
 
        
        <div className='master-body-container11-sub-container2'>
