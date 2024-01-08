@@ -37,13 +37,10 @@ const Navbar = () => {
       }
       
   }, [token,navigate])
-  const selfdashboard=()=>{
-    
-    
-    
 
-    navigate("/Selfinfo")
-  }
+  // const selfdashboard=()=>{
+  //   navigate("/Selfinfo")
+  // }
   const logoutbtn=()=>{
     localStorage.clear()
     setloginout(false)
@@ -51,6 +48,8 @@ const Navbar = () => {
     
     navigate('/Login')
   }
+  
+  
  
  
   // onClick={thirdhidebutton}
@@ -118,8 +117,18 @@ const Navbar = () => {
   </div>
   </div>
   <div className="dropdown-content2">
-  <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
-     <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
+  {/* <button onClick={selfdashboard} className='navbar-logout-btn1'>
+    <NavLink to="/Selfinfo" > Dashboard</NavLink>
+    </button><br/>
+     <button onClick={logoutbtn} className='navbar-logout-btn1'>
+      <NavLink to="/">Logout</NavLink >
+      </button> */}
+      
+    <NavLink to="/Selfinfo"  > Dashboard</NavLink>
+    
+     
+      <NavLink  onClick={logoutbtn}>Logout</NavLink >
+      
   </div>
   
   </div> </>):(<> </>)}

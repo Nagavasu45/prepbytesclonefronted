@@ -200,6 +200,7 @@ const Home = () => {
       </div>
 
       <div className='home-container7'>
+        <div className='home-container7-flex'>
         <div className='home-container7-sub1'>
           <div className='home-container7-sub1-item11'>
           <img className='home-container7-sub1-item1' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_mentor.png' alt='not-loaded'/>
@@ -230,7 +231,287 @@ const Home = () => {
 
       </div>
       </div>
-    
+      <div className='home-container7-sub3'>
+        <div className='home-container7-sub3-item1'>
+          <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/100k_coding.svg' alt='not-loaded' />
+          </div>
+          <div className='home-container7-sub3-item1-text1'>  100k+ </div>
+          <div className='home-container7-sub3-item1-text2'>  Coding </div>
+          <div className='home-container7-sub3-item1-text2'>  Community </div>
+       
+        </div>
+        <div className='home-container7-sub3-item1'>
+          <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/1000%2B_hours_pf.svg' alt='not-loaded' />
+          </div>
+          <div className='home-container7-sub3-item1-text1'>  1000+ </div>
+          <div className='home-container7-sub3-item1-text2'>  Hours of live </div>
+          <div className='home-container7-sub3-item1-text2'>  session </div>
+       
+        </div>
+        <div className='home-container7-sub3-item1'>
+          <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/10000_hours_learning.svg' alt='not-loaded' />
+          </div>
+          <div className='home-container7-sub3-item1-text1'>  10000+ </div>
+          <div className='home-container7-sub3-item1-text2'>  Hours of learning </div>
+          <div className='home-container7-sub3-item1-text2'>   </div>
+       
+        </div>
+        <div className='home-container7-sub3-item1'>
+          <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/doubts_solved.svg' alt='not-loaded' />
+          </div>
+          <div className='home-container7-sub3-item1-text1'>  700k+ </div>
+          <div className='home-container7-sub3-item1-text2'>  Doubts solved </div>
+          <div className='home-container7-sub3-item1-text2'>  </div>
+       
+        </div>
+       </div>
+      </div>
+      
+      <div className='home-container8'>
+        <div ><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Bespoke+Mentors.webp' alt='not-loaded'/></div>
+      </div>
+      <div className='home-container9'> 
+      <div>100% of our students finishing the</div>
+      <div>course have got placed</div>
+      </div>
+      <div className='home-container10'>
+        <img className='home-container10-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/placed-students-mobile.jpg' alt='not-loaded'/>
+      </div>
+      <div className='home-container11'>
+      PrepBytes Mentors
+
+      </div>
+      <div className='home-container12'>
+      PrepBytes students get mentored by industry experts who have achieved in
+
+      </div>
+      <div className='home-container13'>
+      their careers and are passionate about helping students achieve their dream.
+
+      </div>
+      <div className='home-container14'>
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Aditya_bhusan.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+        Aditya
+        </div>
+        <div className='home-container14-sub-item4'>
+        Co-Founder, PrepBytes
+        </div>
+        <div className='home-container14-sub-item5'>
+        Aditya has over 5 years of industry experience and has been part of multiple hiring sprees. He is a placement expert and knows very well what is required to nail it in interviews.
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aveek_sir.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+          Aveek
+        </div>
+        <div className='home-container14-sub-item4'>
+        Mentor, PrepBytes
+        </div>
+        <div className='home-container14-sub-item5'>
+        Aveek is a Technical Content Engineer / Mentor at PrepBytes and has mentored more than 2500 students to date. His teaching methodology is very engaging and highly appreciated by students
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/PrepBytes.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/kunal_sir.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+          Kunal
+
+
+        </div>
+        <div className='home-container14-sub-item4'>
+        SDE, Amazon
+        </div>
+        <div className='home-container14-sub-item5'>
+        Kunal loves competitive programming and likes to spend time teaching students. He has secured under 100 rank in various coding challenges and 287th rank in Google Kickstart.
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/virali_vora.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+          Virali
+
+
+        </div>
+        <div className='home-container14-sub-item4'>
+        SDE, Google
+        </div>
+        <div className='home-container14-sub-item5'>
+        Virali is one of the top coders of the country. She has mentored thousands of students at PrepBytes and has motivated them to think big and achieve big.
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Google_logo.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/kushdeep_sir.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+          Kushdeep
+
+
+        </div>
+        <div className='home-container14-sub-item4'>
+        SDE, Sharechat
+        </div>
+        <div className='home-container14-sub-item5'>
+        He is a Competitive Programmer with some achievements like 5 stars at Codechef and a Specialist at Codeforces. He loves to guide students in achieving their goals .
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/sharechat.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+      <div className='home-container14-sub'>
+        <div className='home-container14-sub-item1'>
+          <img className='home-container14-sub-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aditya_mentor_background.png' alt='not-loaded'/>
+          <div className='home-container14-sub-item2' >
+            
+            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Aditya_bhusan.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container14-sub-item3'>
+        Aditya
+        </div>
+        <div className='home-container14-sub-item4'>
+        Co-Founder, PrepBytes
+        </div>
+        <div className='home-container14-sub-item5'>
+        Aditya has over 5 years of industry experience and has been part of multiple hiring sprees. He is a placement expert and knows very well what is required to nail it in interviews.
+        </div>
+        <div>
+          <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png' alt='not-loaded' />
+        </div>
+        </div>
+        
+        
+
+      </div>
+
+      </div>
+      <div className='home-container15'>
+        <img className='home-container15-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/campus-business-manager/banner/CBM-WEB.webp' alt='not-loaded'/>
+        <div className='home-container15-sub1'>
+          <div className='home-container15-sub1-item1'>Want to represent your college?</div>
+          <div className='home-container15-sub1-item2'>Join prepbytes campus Bussiness Manager<br/>intership program</div>
+          <div><button className='home-container15-sub1-item3'>Join Now</button></div>
+        </div>
+      </div>
+      <div className='home-container16'>
+      PrepBytes for Mentors & Colleges
+
+      </div>
+      <div className='home-container17'>
+      "Join PrepBytes in the journey to reach more colleges and mentor more students"
+
+      </div>
+      <div className='home-container18'>
+        <div className='home-container18-items'>
+          <div><img className='home-container18-items-sub1' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/be_a_part_of_mentors.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container18-items-sub2'> Be a part of growing Mentor Community of PrepBytes</div>
+          <div className='home-container18-items-sub3'> We look forward to industry experts who have a passion for teaching, mentoring & making students future-ready</div>
+          <div><button className='home-container18-items-sub4'>Know more </button></div>
+        </div>
+        <div className='home-container18-items'>
+          <div><img className='home-container18-items-sub1' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/be_a_part_of_mentors.png' alt='not-loaded'/>
+          </div>
+          <div className='home-container18-items-sub2'> Futuristic ALGO-driven Personalised learning module for your college</div>
+          <div className='home-container18-items-sub3'> Every Student is different, hence their Learning should also be. Get in touch with to understand how PrepBytes can help students in your college</div>
+          <div><button className='home-container18-items-sub4'>Know more </button></div>
+        </div>
+        
+
+      </div>
+
+      <div className='home-container19'>
+        <div className='home-container19-sub1'>Most Popular Blogs</div>
+        <div className='home-container19-sub2'> 
+        <div className='home-container19-sub2-item1'>
+          <img className='home-container19-sub2-item1-imgsize' src='https://blog-images-upload.s3.ap-south-1.amazonaws.com/blog_top_50_interview_questions_answers.png' alt='not-loaded' />
+          <div className='home-container19-sub2-item1-text1'>Top 50 C Programming Interview Questions and Answers</div>
+          <div className='home-container19-sub2-item1-text2'>Read Now</div>
+        
+        </div>
+
+
+        <div className='home-container19-sub2-item1'>
+          <img className='home-container19-sub2-item1-imgsize' src='https://s3.ap-south-1.amazonaws.com/blog-images-upload/blog_vinit_story.png' alt='not-loaded' />
+          <div className='home-container19-sub2-item1-text1'>Motivational Story : He got his first placement success after being rejected by 22 companies</div>
+          <div className='home-container19-sub2-item1-text2'>Read Now</div>
+        
+        </div>
+
+
+        <div className='home-container19-sub2-item1'>
+          <img className='home-container19-sub2-item1-imgsize' src='https://blog-images-upload.s3.ap-south-1.amazonaws.com/blog_top_50_interview_questions_answers.png' alt='not-loaded' />
+          <div className='home-container19-sub2-item1-text1'>Lyrics from the famous track aptly describes the situation of every fresher when it comes to facing the interview</div>
+          <div className='home-container19-sub2-item1-text2'>Read Now</div>
+        
+        </div>
+        
+        
+        </div>
+      </div>
     
     </>)
 }

@@ -217,7 +217,8 @@
   }
   .navbar-logout-btn1{
     border:none;
-    height: 35px;
+    /* height: 35px; */
+    text-align: left;
     
   }
   .dropdown-content button {
