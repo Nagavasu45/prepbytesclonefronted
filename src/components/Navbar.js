@@ -28,10 +28,11 @@ const Navbar = () => {
                   if (res.data.msg ==="User Authorized") {
                         setloginout(true);
                         //setprofilename(localStorage.getItem("selfname"))
-                        //navigate("/")
-                    
+                        //navigate("/")                  
 
                 }                
+                
+              
               })
               .catch(err => console.log(err))
       }

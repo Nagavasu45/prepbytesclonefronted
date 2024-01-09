@@ -1,11 +1,9 @@
 import React from 'react'
-
+import "../Stylesheets/elevation.css";
 const Elevationacedemy = () => {
-  return (
-    <div>
-      hi elevation
-    </div>
-  )
+  return (<>
+    
+    </> )
 }
 
 export default Elevationacedemy

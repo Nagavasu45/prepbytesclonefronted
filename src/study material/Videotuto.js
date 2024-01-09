@@ -1,5 +1,5 @@
 import React from 'react'
-import "../courseandprogramstyle/fullstack.css"
+import  "../Interviewnotesstyles/videotuto.css"
 const Videotuto = () => {
   const Fullstackdata=[
     {
