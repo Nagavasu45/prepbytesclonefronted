@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../courseandprogramstyle/fullstack.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const Fullstack = () => {
+  const [hide1,Sethide1]=useState(true)
+  const handlehide1=()=>{
+    Sethide1(!hide1)
+  }
   return (<>
+  <div className='full-main'>
   <div className='fs-container1'>
     <div className='fs-container1-item1'>
       <div className='fs-container1-sub1'>Partner with </div>
@@ -21,13 +26,13 @@ const Fullstack = () => {
       </div>
 
       <div className='fs-container1-sub6'>
-      Next Batch starts: 1st May, 2024
+      Next Batch starts: 15st May, 2024
       <div className='fs-container1-sub6-text2'>Limited seats available</div>
         
       </div>
 
       <div className='fs-container1-sub6'>
-      Next Batch starts: 1st May, 2024
+      Next Batch starts: 1st June, 2024
       <div className='fs-container1-sub6-text2'>Limited seats available</div>
         
       </div>
@@ -282,7 +287,7 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
       </div>
       <div className='fs-container7-sub2'>
         <div>Annual Salary</div>
-        <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/machine-learning/download.svg' alt='not-loaded'/>
+        <img className='fs-container7-sub2-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/machine-learning/download.svg' alt='not-loaded'/>
       </div>
 
     </div>
@@ -403,8 +408,85 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
 
     </div>
     </div>
-    <div className='fs-container11-sub4'><div className='fs-container11-sub4-sty1'>Course Content</div><div> <button className='fs-container11-sub4-sty2'>Hide</button></div></div>
+    <div className='fs-container11-sub4'><div className='fs-container11-sub4-sty1'>Course Content</div><div>{ hide1 ? (<> <button className='fs-container11-sub4-sty2' onClick={handlehide1}>Hide</button></>):(<><button className='fs-container11-sub4-sty2' onClick={handlehide1}>View details</button></>)} </div></div>
   
+
+    { hide1 ?
+      ( 
+        <div className='fs-container12'>
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/HTML_HTML.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>HTML Blog Page</div>
+        <div>Start your web development by making a simple blog page using HTML.</div>
+
+      </div>
+
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/Clock.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>Reminder Clock App</div>
+        <div>Want to build an app to keep your reminders? Build your own Digital Reminder Clock App using HTML, CSS and JS</div>
+
+      </div>
+
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_todo.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>ToDo App</div>
+        <div>This will be a basic project to make your understanding of HTML and CSS clear but you can use it to keep your ToDos as well.</div>
+
+      </div>
+
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>React Blog App</div>
+        <div>Create your own Medium website. Through the project you will understand how React , Node and MongoDB work together to create magic.</div>
+
+      </div>
+
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_shopping.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>E-commerce Web App</div>
+        <div>This will be one of the major projects of the program. It will be a full-fledged working website. Just add some products and you will be ready to sell online and take payments.</div>
+
+      </div>
+
+    </div>):(<> </>)
+    
+    }
+    <div className='fs-container13'>
+      <div className='fs-container13-sub1'>
+        <div className='fs-container13-sub1-item1'>Get a real time project</div>
+       
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/real.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Get a real time project</div>
+        </div>
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/experience.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Experience agile methodology <br/> &  Work with industry experts</div>
+       
+        </div>
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/deploy.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Deploy your project to <br /> Production</div>
+       
+        </div>
+      </div>
+      
+      
+      <div className='fs-container13-sub2'>
+        <div className='fs-container13-sub2-text1'>
+        Certification
+        </div>
+        <div className='fs-container13-sub2-text2'>Joint Co-Branded Participation Certificate & Partner Completion Certificate</div>
+        <div><img className='fs-container13-sub2-text3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/development-programs/nasscom-certificate-full-satck-mern.png ' alt='not-loaded'/></div>
+      </div>
+
+    </div>
+    <div className='fs-container14'>
+      
+      <img className='fs-container14-imgsize' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/digital-marketing/Feature.webp" alt="not-loade"/>
+    </div >
+    </div>
     </>
     
   )

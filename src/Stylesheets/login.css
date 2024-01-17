@@ -77,3 +77,92 @@
     border-radius: 10px;
     margin-top: 17%;
 }
+/*340px to 450px --------------------------------------------------*/
+@media screen and (min-width:340px) and (max-width:450px){
+    .login-page-background{
+        background-color: rgb(92, 92, 248);
+        margin:0;
+        padding:0px;
+        
+    }
+    .login-sub-container{
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: auto;
+        
+    
+    }
+    .login-chair-image{
+        padding-top: 12%;
+        padding: 5%;
+        width:90%;
+        height: 100%;
+    
+    }
+    .SignIn-img{
+        width:100%;
+        height: 100%;
+    }
+    .login-achievers-container{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+    .login-achievers-sub-con{
+        width:100%;
+        min-height:400px;
+        margin-top: 28%;
+        border-radius: 5px;
+        background-color: white;
+        position: relative;
+    }
+    .small-con-2{
+        width:200px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 20%;
+    }
+    .small-con-1{
+        width:200px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10%;
+    }
+    .small-img-style{
+        width:48px;
+        height: 48px;
+        padding: 1px;
+    }
+    .viewers-style{
+        font-weight: 700;
+        text-align: left;
+    }
+    .pb-logo{
+        position: absolute;
+        margin-top: -15%;
+        margin-left: 33%; 
+    
+    }
+    .pb-logo-style{
+        width:70px;
+        height: 70px;
+    }
+    /*login container-----------*/
+    .login-container{
+        width:100%;
+        /* height: 450px; */
+        height: auto;
+        /* background-color: white; */
+        border-radius: 10px;
+        /* margin: auto; */
+        margin-top: 17%;
+    }
+
+}

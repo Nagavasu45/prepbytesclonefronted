@@ -90,8 +90,8 @@ const Navbar = () => {
         </div>
   </div>
   
-  <div className="dropdown">
-  <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
+  <div >
+  <button className="dropbtn"><NavLink to="/Elevationacedemy" className="navbar-elevation">Elevation Academy</NavLink></button>
         
   </div>
   
@@ -173,7 +173,7 @@ const Navbar = () => {
   </div>
   
   <div className="dropdown">
-  <button className="dropbtn"><NavLink to="/Elevationacedemy"></NavLink>Elevation Academy</button>
+  <button className="dropbtn"><NavLink to="/Elevationacedemy" className="navbar-elevation">Elevation Academy</NavLink></button>
         
   </div>
   

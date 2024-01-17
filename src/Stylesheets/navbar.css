@@ -9,6 +9,10 @@
     box-shadow: 0 4px 5px -0px rgba(0, 0, 0, 0.064);
    
 }
+.navbar-elevation{
+  text-decoration: none;
+  color:rgb(80, 80, 80);
+}
 .header-container-sub-1{
   display: flex;
 }

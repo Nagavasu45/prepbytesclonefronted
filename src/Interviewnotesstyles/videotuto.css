@@ -99,3 +99,25 @@
     padding-top: 5px;
     padding-left: 20px;
 }
+/*---------------340px to 450px----------------------------------*/
+@media screen and (min-width:340px) and (max-width:450px){
+    .full-sub-container1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid blue;
+        justify-content: space-between;
+        background-color: rgb(215, 249, 244);
+    
+    }
+    .full-sub-container1-item1{
+        width:100% ;
+        text-align: left;
+        border: 1px solid red;
+    }
+    .full-sub-container1-item2{
+        width:100% ;
+        text-align: left;
+        border: 1px solid red;
+    }
+}

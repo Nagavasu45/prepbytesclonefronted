@@ -81,7 +81,7 @@ const Master = () => {
        {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp */}
        {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Expert+Mentors.webp */}
        {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Get+certificate-01.webp */}
-      
+      <div className='master1'>
        <div className='master-body-container7-sub-1'>
         <div className='master-body-container7-sub-1-items'>
           <div className='master-body-container7-sub-1-imgsize-position'><img className='master-body-container7-sub-1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp' alt='not-loaded'/></div>
@@ -120,7 +120,11 @@ const Master = () => {
 
 
        </div>
+       </div>
+       
        <div className='master-body-container7-sub-2'><img className='master-body-container7-sub-2-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vector.svg' alt="not-loaded"/></div>
+      
+       <div className='master2'>
        <div className='master-body-container7-sub-3'>
          {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_250+Coding+Questions.webp */}
        {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_20+Live+Coding+Sessions.webp */}
@@ -163,7 +167,7 @@ const Master = () => {
           </div>
         </div>
 
-       </div>
+       </div></div>
        </div>
        {/* <div><hr/></div> */}
        <div className='hr-style'><hr/></div>

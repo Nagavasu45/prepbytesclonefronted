@@ -129,7 +129,7 @@ const Home = () => {
             
           </div>
           <div className='home-container3-sub2-item4'> 
-            <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/achieve_your_coding_dream.svg' alt='not-loaded' />
+            <img className='home-container3-sub2-item4-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/achieve_your_coding_dream.svg' alt='not-loaded' />
           </div>
           {/* https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/achieve_your_coding_dream.svg */}
         </div>
@@ -268,7 +268,7 @@ const Home = () => {
       </div>
       
       <div className='home-container8'>
-        <div ><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Bespoke+Mentors.webp' alt='not-loaded'/></div>
+        <div ><img className='home-container8-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Bespoke+Mentors.webp' alt='not-loaded'/></div>
       </div>
       <div className='home-container9'> 
       <div>100% of our students finishing the</div>

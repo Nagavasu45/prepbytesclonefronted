@@ -2,12 +2,12 @@
     align-items: center;
     color:rgba(0, 0, 0, 0.907);
     
+    
 
 }
 .btn1{
   margin-top: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: auto;
   width: 40%;
   height: 50px;
   /* border:none; */
@@ -30,7 +30,7 @@
   border-left: none;
   border-right: none;
   border-top:none;
-  width:100%;
+  width:90%;
   height:30px;
   color:rgba(0, 0, 0, 0.907);
 
@@ -54,10 +54,52 @@
 }
 .login-sub-button2-style{
   margin-top:10px;
-  width:100%;
+  width:90%;
   height:40px;
   background-color:rgb(232, 232, 244) ;
   border-radius: 5px;
   border: none;
 }
+/*--------------340 to 450px-------------------------------------------------------------*/
 
+@media screen and (min-width:340px) and (max-width:450px){
+  .login-sub-con-compo-style1{
+    /* width:80%; */
+    /* height:550px; */
+    background-color: white;
+    border: 1px solid black;
+    margin:auto;
+    
+    text-align: left;
+    
+}
+.btn1-width{
+  width :300px;
+}
+.login-sub-button1-style{
+  width:70%;
+  height:40px;
+  
+  background-color:rgb(114, 114, 248) ;
+  border-radius: 5px;
+  margin-top:10px;
+  border: none;
+}
+.login-sub-button2-style{
+  margin-top:10px;
+  width:80%;
+  height:40px;
+  background-color:rgb(232, 232, 244) ;
+  border-radius: 5px;
+  border: none;
+}
+.login-sub-con-compo-1{
+  align-items: center;
+  color:rgba(0, 0, 0, 0.907);
+  width:300px;
+  
+
+}
+  
+
+} 
