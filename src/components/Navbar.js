@@ -140,7 +140,7 @@ const Navbar = () => {
         <div className="dropdown-content">
           <NavLink to="/Htmlprojects">HTML</NavLink>
           <NavLink to="/Cssprojects">CSS</NavLink>
-          <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" to="/Fullstack">Full Stack Program</NavLink></div>
+          
           <NavLink to="/Javascriptprojects">JavaScript</NavLink>
           <NavLink to="/Reactjsprojects">React js</NavLink>
           <NavLink to="/Nodejsprojects">Node js</NavLink>
