@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import "../Stylesheets/navbar.css";
 
 
@@ -10,32 +10,57 @@ import axios from 'axios';
 
 const Navbar = () => {
     const [loginout, setloginout] = useState(false);
-      
+     console.log(loginout) 
+    const [barhide,Setbarhide]=useState(false)
     const navigate=useNavigate();
-    const temp=localStorage.getItem("selfname")
-   
+    const sty={
+      display:barhide ? 'block':'none'
+      
+    }
+    const barsmenuhandle=(()=>{
+      Setbarhide(!barhide)
+  
+  })
+  const handleaction=()=>{
+    Setbarhide(!barhide)
+  }
     
-    // console.log(temp,loginout,"11111111")
-  //  const [profilename,setprofilename]=useState("hi")
+    
     const token = localStorage.getItem("token");
     //console.log(token)
+    useEffect(()=>{
+      if(token==null){
+        setloginout(false)
+      }
+
+    },[token,navigate])
+  
     useEffect(() => {
+      console.log(token)
       if (token) {
+         
         console.log(token);
           axios.get("https://prepbytesclonebackend.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
               .then((res) => {
-                  console.log(res.data.msg);
-                  if (res.data.msg ==="User Authorized") {
-                        setloginout(true);
-                        //setprofilename(localStorage.getItem("selfname"))
-                        //navigate("/")                  
+                //   if (res.data.msg ==="User Authorized") {
+                //         setloginout(true);
+                //         //setprofilename(localStorage.getItem("selfname"))
+                //         //navigate("/")                  
 
-                }                
+                // }     
+                if(res.data.msg!=="User Authorized")  {
+                  setloginout(false);
+
+                }  
+                else{
+                  setloginout(true);
+                }       
                 
               
               })
               .catch(err => console.log(err))
       }
+      
       
   }, [token,navigate])
 
@@ -49,7 +74,9 @@ const Navbar = () => {
     
     navigate('/Login')
   }
-  
+  const dashboardhandle=()=>{
+    setloginout(false)
+  }
   
  
  
@@ -70,7 +97,18 @@ const Navbar = () => {
                                                           <button id='signup'><NavLink to='/Signup' className='text-style-navlink'>Sign up</NavLink></button></div>}
         </div>
         {loginout ?
-        (<div className='nav-bar-lists1'>
+        (<><div className='barsmenu' ><FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> </div>
+         <div className='barsmenu-lists1' style={sty}>
+         <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo">Dashboard</NavLink></div> 
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+          <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" onClick={logoutbtn}>Logout</NavLink></div>
+        </div>
+        <div className='nav-bar-lists1'>
         
         <div className="dropdown">
         <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
@@ -90,7 +128,7 @@ const Navbar = () => {
         </div>
   </div>
   
-  <div >
+  <div className="dropdown">
   <button className="dropbtn"><NavLink to="/Elevationacedemy" className="navbar-elevation">Elevation Academy</NavLink></button>
         
   </div>
@@ -102,6 +140,7 @@ const Navbar = () => {
         <div className="dropdown-content">
           <NavLink to="/Htmlprojects">HTML</NavLink>
           <NavLink to="/Cssprojects">CSS</NavLink>
+          <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" to="/Fullstack">Full Stack Program</NavLink></div>
           <NavLink to="/Javascriptprojects">JavaScript</NavLink>
           <NavLink to="/Reactjsprojects">React js</NavLink>
           <NavLink to="/Nodejsprojects">Node js</NavLink>
@@ -113,19 +152,14 @@ const Navbar = () => {
   { loginout ? (<><div className="dropdown2">
   <div>
   <div className="dropbtn2">
-    <span className="text-round-style">{temp[0].toUpperCase()}</span>
-    <span className="text-normal-style"><span>Hi</span><span>{localStorage.getItem('selfname')} </span></span>
+    <span className="text-round-style">{localStorage.getItem("selfname")[0].toUpperCase()}</span>
+    <span className="text-normal-style">Hi</span><span className="text-normal-style">{localStorage.getItem("selfname")} </span>
   </div>
   </div>
   <div className="dropdown-content2">
-  {/* <button onClick={selfdashboard} className='navbar-logout-btn1'>
-    <NavLink to="/Selfinfo" > Dashboard</NavLink>
-    </button><br/>
-     <button onClick={logoutbtn} className='navbar-logout-btn1'>
-      <NavLink to="/">Logout</NavLink >
-      </button> */}
+  
       
-    <NavLink to="/Selfinfo"  > Dashboard</NavLink>
+    <NavLink to="/Selfinfo" onClick={dashboardhandle} > Dashboard</NavLink>
     
      
       <NavLink  onClick={logoutbtn}>Logout</NavLink >
@@ -136,23 +170,21 @@ const Navbar = () => {
   
   
   
-  {/* <div className="dropdown">
-  <div>
-  <div className="dropbtn">
-    <span className="text-round-style">{temp[0].toUpperCase()}</span>
-    <span className="text-normal-style"><span>Hi</span><span>{profilename} </span></span>
-  </div>
-  </div>
-  <div className="dropdown-content">
-  <button onClick={selfdashboard} className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Dashboard</NavLink></button><br/>
-     <button onClick={logoutbtn} className='navbar-logout-btn1'><NavLink to="/">Logout</NavLink ></button>
-  </div>
   
-  </div> */}
  
-         </div> ): 
-         (<div className='nav-bar-lists'>
-        
+         </div></> ): 
+         (<><div className='barsmenu'><FontAwesomeIcon icon={faBars} onClick={barsmenuhandle}/> </div>
+         <div className='barsmenu-lists1' style={sty}>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2"  to="/Master">Master compitative programming</NavLink></div> 
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2"  to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+          <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Login" >Login/Signup</NavLink></div>
+        </div>
+         <div className='nav-bar-lists'>
+            
         <div className="dropdown">
         <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
         <div className="dropdown-content">
@@ -191,7 +223,7 @@ const Navbar = () => {
             
 
         </div>
-  </div></div>)}
+  </div></div></>)}
         
         
         

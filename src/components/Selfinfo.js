@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../Stylesheets/selfinfo.css"
 
 import axios from 'axios'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 
 import "../Interviewnotesstyles/mocktests.css"
@@ -17,8 +17,13 @@ import { faXmark} from '@fortawesome/free-solid-svg-icons'
 const Selfinfo = () => {
   const [boughtcourses, Setboughtcourses]=useState([])
   const [firsthandle, Setfirsthandle] = useState(false)
-  const [localname,Setlocalname]=useState(localStorage.getItem("selfname"))
+  let localname=localStorage.getItem("selfname")
   const sechideicon1 = true;
+  const navigate=useNavigate()
+ 
+    
+    
+    
   
  
   
@@ -55,11 +60,19 @@ const Selfinfo = () => {
         
       
         }
-    const logoutbtn3=()=>{
+    const logoutbtn3= ()=>{
           localStorage.removeItem("selfname")
           localStorage.clear()
-          Setlocalname(null)
-          // localStorage.setItem("loginhandle",false)
+          //localStorage.setItemItem('token',null)
+          
+          window.location.reload(false)
+          navigate("/Login")
+            
+          
+          
+          
+          
+        
          
           
         }
@@ -90,8 +103,8 @@ const Selfinfo = () => {
   
   </div>
    <div className="dropdown-content1">
-  <button  className='navbar-logout-btn1'><NavLink to="/Selfinfo"> Courses</NavLink></button><br/>
-     <button onClick={logoutbtn3} className='navbar-logout-btn1'><NavLink to="/" >Logout</NavLink ></button>
+  <button className='navbar-logout-btn1' ><NavLink to="/Selfinfo" > Courses</NavLink></button><br/>
+     <button  className='navbar-logout-btn1'><NavLink onClick={logoutbtn3} >Logout</NavLink ></button>
   </div>
   
   </div>

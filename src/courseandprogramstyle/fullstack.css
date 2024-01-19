@@ -47,7 +47,7 @@
     height:50px;
     padding-top: 4px;
     padding-left: 12px;
-    border: 1px solid rgb(246, 38, 135) ;  
+    /* border: 1px solid rgb(246, 38, 135) ;   */
     background-color: rgb(34, 29, 57);
 
 }
@@ -58,7 +58,7 @@
     align-items: center;
 }
 .fs-container1-sub6{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 280px;
     padding: 10px;
     border-color: white;
@@ -81,20 +81,20 @@
     background-color: rgb(242, 242, 242);
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .fs-container3{
     
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-around;
     padding-top:30px;
 }
 .fs-container3-sub1{
     width:40%;
    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     padding-top: 150px;
     padding-left: 5%;
@@ -113,7 +113,7 @@
 .fs-container3-sub2{
     width:40%;
    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     
     /* padding-left: 5%;
@@ -148,7 +148,7 @@
  }
  .fs-container4-sub3-item1{
     width:25%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     padding-left: 5%;
     
@@ -199,7 +199,7 @@
  }
  .fs-container4-sub3-item2{
     width:60%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     
     
@@ -211,7 +211,7 @@
  }
  .fs-container4-sub3-item2-insub1{
     width:40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* padding: 5%; */
     
     
@@ -231,7 +231,7 @@
  }
  .fs-container4-sub3-item2-insub2{
     width:40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 
  }
@@ -343,7 +343,7 @@
     width: 50%;
     font-size: 28px;
     font-weight: 600;
-    border: 1px solid red;
+    /* border: 1px solid red; */
  }
  .fs-container7-sub1-item1{
     display: flex;
@@ -370,7 +370,7 @@
     width: 40%;
     font-size: 28px;
     font-weight: 600;
-    border: 1px solid red;
+    /* border: 1px solid red; */
  }
  .fs-container7-sub2-imgsize{
    width: 100%;      
@@ -392,14 +392,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
  }
  .fs-container8-sub2-items{
     position: relative;
     background-color: white;
     width:320px;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10px;
    
  }
@@ -547,13 +547,13 @@
 }
 .fs-container13-sub1{
    width: 50%;
-   border: 1px solid red; 
+   /* border: 1px solid red;  */
    
    
 }
 .fs-container13-sub2{
    width: 40%;
-   border: 1px solid red; 
+   /* border: 1px solid red;  */
    padding: 5%;
    background-color: rgb(248, 200, 111);
 }
@@ -655,7 +655,7 @@
       height:50px;
       padding-top: 4px;
       padding-left: 12px;
-      border: 1px solid rgb(246, 38, 135) ;  
+      /* border: 1px solid rgb(246, 38, 135) ;   */
       background-color: rgb(34, 29, 57);
   
   }
@@ -669,7 +669,7 @@
       
   }
   .fs-container1-sub6{
-      border: 1px solid red;
+      /* border: 1px solid red; */
       width: 80%;      
       height:50px;
       border-radius: 10px;
@@ -692,21 +692,21 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      border: 1px solid black;
+      /* border: 1px solid black; */
   }
   .fs-container3{
       
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       justify-content: space-around;
       padding-top:30px;
   }
   .fs-container3-sub1{
       width:80%;
      
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       padding-top: 50px;
       padding-left: 5%;
@@ -726,7 +726,7 @@
   .fs-container3-sub2{
       width:100%;
      
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       
       /* padding-left: 5%;
@@ -762,7 +762,7 @@
    }
    .fs-container4-sub3-item1{
       width:90%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       padding-left: 10%;
       margin: auto;
@@ -814,7 +814,7 @@
    }
    .fs-container4-sub3-item2{
       width:100%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       
       
@@ -827,7 +827,7 @@
    }
    .fs-container4-sub3-item2-insub1{
       width:100%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       margin: auto;
       margin-top: 50px;
       
@@ -848,7 +848,7 @@
    }
    .fs-container4-sub3-item2-insub2{
       width:100%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
   
    }
@@ -962,7 +962,7 @@
       width: 100%;
       font-size: 28px;
       font-weight: 600;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container7-sub1-item1{
       display: flex;
@@ -995,7 +995,7 @@
       width: 100%;
       font-size: 28px;
       font-weight: 600;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container7-sub2-imgsize{
       width: 100%;      
@@ -1018,14 +1018,14 @@
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: wrap;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container8-sub2-items{
       position: relative;
       background-color: white;
       width:320px;
       height: auto;
-      border: 1px solid white;
+      /* border: 1px solid white; */
       border-radius: 10px;
       margin: auto;
       margin-top: 70px;
@@ -1060,18 +1060,7 @@
       padding-right: 20px;
    }
   
-   /* .fs-container8-sub2-items-styl4{
-      height:10px;
-      width: auto;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      
-      background-color: orange;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      
-   } */
+ 
    .fs-container9{
       margin-top: 50px;
       padding-left:50px;
@@ -1115,8 +1104,9 @@
   .fs-container11-sub3{
       position: absolute;
       border:1px solid orange ;
-      width:70px;
-      height:30px;
+      width:90px;
+      padding: 50px;
+      height:25px;
       border-radius:30px; 
       color: white;
       background-color: rgb(0, 0, 13);
@@ -1179,7 +1169,7 @@
   .fs-container13-sub1{
      width: 90%;
      padding: 5%;
-     border: 1px solid red; 
+     /* border: 1px solid red;  */
      margin-bottom: 30px;
      
      
@@ -1187,7 +1177,7 @@
   }
   .fs-container13-sub2{
      width: 90%;
-     border: 1px solid red; 
+     /* border: 1px solid red;  */
      padding: 5%;
      background-color: rgb(248, 200, 111);
   }
@@ -1284,7 +1274,7 @@
       height:50px;
       padding-top: 4px;
       padding-left: 12px;
-      border: 1px solid rgb(246, 38, 135) ;  
+      /* border: 1px solid rgb(246, 38, 135) ;   */
       background-color: rgb(34, 29, 57);
   
   }
@@ -1295,7 +1285,7 @@
       align-items: center;
   }
   .fs-container1-sub6{
-      border: 1px solid red;
+      /* border: 1px solid red; */
       width: 280px;
       padding: 10px;
       border-color: white;
@@ -1318,20 +1308,20 @@
       background-color: rgb(242, 242, 242);
       display: flex;
       flex-wrap: wrap;
-      border: 1px solid black;
+      /* border: 1px solid black; */
   }
   .fs-container3{
       
       display: flex;
       flex-wrap: wrap;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       justify-content: space-around;
       padding-top:30px;
   }
   .fs-container3-sub1{
       width:48%;
      
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       padding-top: 150px;
       padding-left: 1%;
@@ -1350,7 +1340,7 @@
   .fs-container3-sub2{
       width:40%;
      
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       
       /* padding-left: 5%;
@@ -1385,7 +1375,7 @@
    }
    .fs-container4-sub3-item1{
       width:27%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       padding-left: 3%;
       
@@ -1436,7 +1426,7 @@
    }
    .fs-container4-sub3-item2{
       width:60%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
       
       
@@ -1448,7 +1438,7 @@
    }
    .fs-container4-sub3-item2-insub1{
       width:40%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       /* padding: 5%; */
       
       
@@ -1468,7 +1458,7 @@
    }
    .fs-container4-sub3-item2-insub2{
       width:40%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       
   
    }
@@ -1581,7 +1571,7 @@
       width: 50%;
       font-size: 28px;
       font-weight: 600;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container7-sub1-item1{
       display: flex;
@@ -1608,7 +1598,7 @@
       width: 40%;
       font-size: 28px;
       font-weight: 600;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container7-sub2-imgsize{
      width: 100%;      
@@ -1630,7 +1620,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      border: 1px solid red;
+      /* border: 1px solid red; */
    }
    .fs-container8-sub2-items{
       position: relative;
@@ -1638,7 +1628,7 @@
       width:320px;
       height: auto;
       margin-top:50px;
-      border: 1px solid white;
+      /* border: 1px solid white; */
       border-radius: 10px;
      
    }
@@ -1786,13 +1776,13 @@
   }
   .fs-container13-sub1{
      width: 50%;
-     border: 1px solid red; 
+     /* border: 1px solid red;  */
      
      
   }
   .fs-container13-sub2{
      width: 40%;
-     border: 1px solid red; 
+     /* border: 1px solid red;  */
      padding: 5%;
      background-color: rgb(248, 200, 111);
   }

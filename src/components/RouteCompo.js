@@ -32,6 +32,7 @@ const RouteCompo = () => {
   <BrowserRouter>
   
   <Navbar /> 
+  
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/Login" element={<Login />}/>

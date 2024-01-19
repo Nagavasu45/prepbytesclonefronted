@@ -1,9 +1,6 @@
 .login-sub-con-compo-1{
     align-items: center;
-    color:rgba(0, 0, 0, 0.907);
-    
-    
-
+    color:rgba(0, 0, 0, 0.907);  
 }
 .btn1{
   margin-top: 30px;
@@ -60,12 +57,16 @@
   border-radius: 5px;
   border: none;
 }
+.btn1-width-style{
+  width:100%;
+}
 /*--------------340 to 450px-------------------------------------------------------------*/
 
 @media screen and (min-width:340px) and (max-width:450px){
   .login-sub-con-compo-style1{
     /* width:80%; */
     /* height:550px; */
+    width :100%;
     background-color: white;
     border: 1px solid black;
     margin:auto;
@@ -74,10 +75,10 @@
     
 }
 .btn1-width{
-  width :300px;
+  width :100%;
 }
 .login-sub-button1-style{
-  width:70%;
+  width:250px;
   height:40px;
   
   background-color:rgb(114, 114, 248) ;

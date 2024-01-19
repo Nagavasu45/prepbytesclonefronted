@@ -21,7 +21,7 @@ const Loginsignup = () => {
     <div>
         <div className='login-signup-width'>
             <button className='btn1' onClick={handlebtn1}>Login</button><button className='btn2' onClick={handlebtn2}>Sign Up</button>
-           <div className='btn1-width'> {btn1 ? <Loginnsub /> :" "}
+           <div className='btn1-width'> {btn1 ?<div className='btn1-width-style'> <Loginnsub /></div> :" "}
             {btn2 ? <Signupsub /> : " "}
             </div>
         </div>

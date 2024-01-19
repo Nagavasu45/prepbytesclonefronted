@@ -106,6 +106,7 @@ const ele22plus4=()=>{
 }
 
   return (<>
+  <div className='ele-maincon'>
   <div className='ele-container1'>
     <div className='ele-container1-sub1'>
       <div  className='ele-container1-sub1-text1'>PrepBytes Elevation Academy - Full Stack Web Development Career</div>
@@ -958,6 +959,7 @@ const ele22plus4=()=>{
         </div>
         {plus4 ?(<><div className='ele-container22-sub1-item3'>Click on apply button on the top banner and fill the complete application form.</div></>):(<></>)  }
         
+      </div>
       </div>
     </> )
 }

@@ -327,19 +327,19 @@ ele-container3-sub1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border:1px solid orangered;
+    border:1px solid rgb(84, 84, 84);
 }
 .ele-container8-sub4{
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    border:1px solid orangered;
+    /* border:1px solid orangered; */
 }
 .ele-container8-sub3-item1{
     width:30px;
     height:30px;
     color: white;
-    border:3px solid orangered;
+    border:3px solid rgb(244, 158, 127);
     padding: 5px;
     border-radius: 5px;
     
@@ -349,7 +349,7 @@ ele-container3-sub1{
     color: white;
    font-size: 22px;
    border-radius: 3px;
-   background-color: orangered;
+   background-color: rgb(244, 158, 127);
 }
 .ele-container8-sub3-item3{
     padding-top: 2px;
@@ -1197,7 +1197,10 @@ ele-container3-sub1{
     }
 }
 /* 340px to 750px-------------------------------------------------------------------------*/
-@media screen and (min-width:340px) and (max-width:750px){
+@media screen and (min-width:340px) and (max-width:450px){
+    .ele-maincon{
+        overflow-x: hidden;
+    }
     .ele-container1{
         padding-top: 75px;
         margin-left: 1%;
@@ -1291,7 +1294,7 @@ ele-container3-sub1{
         right: -12%;
         top:15px;
         border-color: blue;
-        display: none;
+        /* display: none; */
     }
     .ele-container3-sub1-item1{
         position: relative;
@@ -1441,7 +1444,7 @@ ele-container3-sub1{
     .ele-container3-sub2{
         width: 98%;
         background-color: rgb(242, 242, 242);
-        border: 1px solid red;
+        border: 1px solid black;
         padding: 1%;
     }
     .ele-container3-sub2-item1{
@@ -1541,20 +1544,20 @@ ele-container3-sub1{
         /* flex-direction: row; */
         justify-content: space-between;
         flex-wrap: wrap;
-        border:1px solid orangered;
+        border:1px solid rgb(88, 88, 88);
         margin-bottom: 30px;
     }
     .ele-container8-sub4{
         display: flex;
         justify-content: left;
         flex-wrap: wrap;
-        border:1px solid orangered;
+        /* border:1px solid orangered; */
     }
     .ele-container8-sub3-item1{
         width:22px;
         height:22px;
         color: white;
-        border:3px solid orangered;
+        border:3px solid rgb(249, 169, 139);
         padding: 5px;
         border-radius: 5px;
         
@@ -1564,7 +1567,7 @@ ele-container3-sub1{
         color: white;
        font-size: 18px;
        border-radius: 3px;
-       background-color: orangered;
+       background-color: rgb(240, 165, 138);
     }
     .ele-container8-sub3-item3{
         padding-top: 2px;
