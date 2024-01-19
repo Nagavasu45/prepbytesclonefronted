@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCaretDown, faXmark } from '@fortawesome/free-solid-svg-icons';
 import "../Stylesheets/navbar.css";
 
 
@@ -97,7 +97,7 @@ const Navbar = () => {
                                                           <button id='signup'><NavLink to='/Signup' className='text-style-navlink'>Sign up</NavLink></button></div>}
         </div>
         {loginout ?
-        (<><div className='barsmenu' ><FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> </div>
+        (<><div className='barsmenu' >{barhide ? <FontAwesomeIcon icon={faXmark} onClick={barsmenuhandle}/>:<FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> } </div>
          <div className='barsmenu-lists1' style={sty}>
          <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
           <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo">Dashboard</NavLink></div> 
