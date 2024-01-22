@@ -28,19 +28,33 @@ const Selfinfo = () => {
  
   
   
+  // useEffect(() => {
+  //       const buyData = async () => {
+  //        try {
+  //           const response1 = await axios.get('https://prepbytesclonebackend.onrender.com/bought');
+  //            Setboughtcourses(response1.data)
+             
+             
+  //        } catch (error) {
+  //          console.log(error);
+  //          }
+  //        };
+  //        buyData(); 
+  //           },[boughtcourses]);
+
   useEffect(() => {
-        const buyData = async () => {
-         try {
-            const response1 = await axios.get('https://prepbytesclonebackend.onrender.com/bought');
-             Setboughtcourses(response1.data)
-             
-             
-         } catch (error) {
-           console.log(error);
-           }
-         };
-         buyData(); 
-            },[boughtcourses]);
+    const interval=setInterval(async() => {
+     try {
+        const response1 = await axios.get('https://prepbytesclonebackend.onrender.com/bought');
+         Setboughtcourses(response1.data)
+         
+         
+     } catch (error) {
+       console.log(error);
+       }
+     },1000);
+     return () => clearInterval(interval);
+        },[]);
   const widthhandle={
               width: firsthandle ? '90px' : '300px',
 
