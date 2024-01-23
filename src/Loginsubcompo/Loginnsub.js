@@ -31,11 +31,11 @@ const Loginnsub = () => {
                 console.log(res.data.userdetail.email)
                 localStorage.setItem("selfname",res.data.userdetail.username)
                 localStorage.setItem("selfdetails",res.data.userdetail.email)
-                localStorage.setItem("TF",true)
+                localStorage.setItem("accesskey",true)
                 // localStorage.setItem("loginhandle",false)
               
                 alert(res.data.msg)
-                navigate('/Selfinfo')
+                navigate('/')
                 
               
           }

@@ -28,6 +28,7 @@ import Elevationacedemy from '../elevation/Elevationacedemy'
 
 
 const RouteCompo = () => {
+   localStorage.setItem("accesskey",false)
   return (<>
   <BrowserRouter>
   

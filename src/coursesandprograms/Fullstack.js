@@ -8,6 +8,51 @@ const Fullstack = () => {
   const handlehide1=()=>{
     Sethide1(!hide1)
   }
+  const [b1,Setb1]=useState(true)
+  const [b2,Setb2]=useState(false)
+  const [b3,Setb3]=useState(false)
+  const [b4,Setb4]=useState(false)
+  const [b5,Setb5]=useState(false)
+  const b1handle=()=>{
+
+    Setb1(true)
+    Setb2(false)
+    Setb3(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b2handle=()=>{
+
+    Setb2(true)
+    Setb1(false)
+    Setb3(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b3handle=()=>{
+
+    Setb3(true)
+    Setb2(false)
+    Setb1(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b4handle=()=>{
+
+    Setb4(true)
+    Setb2(false)
+    Setb3(false)
+    Setb1(false)
+    Setb5(false)
+  }
+  const b5handle=()=>{
+
+    Setb5(true)
+    Setb2(false)
+    Setb3(false)
+    Setb4(false)
+    Setb1(false)
+  }
   return (<>
   <div className='full-main'>
   <div className='fs-container1'>
@@ -61,7 +106,7 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
       <div className='fs-container4-sub2'>We have designed a unique program where you can learn Full stack & experience <br/> being a developer sitting at your home</div>
       <div className='fs-container4-sub3'>
         <div className='fs-container4-sub3-item1'>
-          <div className='fs-container4-sub3-item1-sty1'>
+          {b1 ?(<div onClick={b1handle} className='fs-container4-sub3-item1-sty1'>
           Batch Commencement
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -70,10 +115,17 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
             </div>
           </div>
 
+          </div>):(<div onClick={b1handle} className='fs-container4-sub3-item2-sty1'>
+          Batch Commencement
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            1
+            
+            </div>
           </div>
 
-
-          <div className='fs-container4-sub3-item2-sty1'>
+          </div>)}
+          {b2 ?( <div onClick={b2handle} className='fs-container4-sub3-item1-sty1'>
           Learn required languages, framework & tools
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -83,9 +135,20 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):( <div onClick={b2handle} className='fs-container4-sub3-item2-sty1'>
+          Learn required languages, framework & tools
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            2
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+
+        {b3 ? (<div onClick={b3handle} className='fs-container4-sub3-item1-sty1'>
         Complete awesome real world projects
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -95,9 +158,19 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):(<div onClick={b3handle} className='fs-container4-sub3-item2-sty1'>
+        Complete awesome real world projects
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            3
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+        {b4 ? (<div onClick={b4handle} className='fs-container4-sub3-item1-sty1'>
         Experience the complete development lifecycle
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -107,9 +180,19 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):(<div onClick={b4handle} className='fs-container4-sub3-item2-sty1'>
+        Experience the complete development lifecycle
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            4
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+      {b5 ? (<div  onClick={b5handle} className='fs-container4-sub3-item1-sty1'>
         Be a certified Full Stack Developer
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -119,14 +202,27 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
+        </div>):(<div onClick={b5handle} className='fs-container4-sub3-item2-sty1'>
+        Be a certified Full Stack Developer
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            5
+            
+            </div>
+          
+
+          </div>
+        </div>)}
+
+        
         </div>
-        </div>
-        <div className='fs-container4-sub3-item2'>
-          <div className='fs-container4-sub3-item2-insub'>
-          <div className='fs-container4-sub3-item2-insub1'>
-            <div className='fs-container4-sub3-item2-insub1-style1'>
+        {b1 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
             Batch Commencement
             </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
             <div className='fs-container4-sub3-item2-insub1-style2'>
             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
             </div>
@@ -156,7 +252,181 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
          
           {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
          */}
-        </div>
+        </div>):(<></>)}
+        {b2 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Learn required languages, framework & tools
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Live online classes of Javascript, ReactJs, NodeJs,Express, HTML & CSS
+            </div>
+           
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Learn the industry wide used tools like MongoDB, Git & Jira
+            </div>
+            </div>
+           
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b3 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Complete awesome real world projects
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />HTML Blog Page
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Todo App
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Chat App
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Reminder Clock App
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />React Blog
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />E-commerce Web App
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b4 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Experience the complete development lifecycle
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b5 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Be a certified Full Stack Developer
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+         {/* <div className='fs-container4-sub3-item2'>
+           <div className='fs-container4-sub3-item2-insub'>
+           <div className='fs-container4-sub3-item2-insub1'>
+             <div className='fs-container4-sub3-item2-insub1-style1'>
+             Batch Commencement
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+             </div>
+
+           </div>
+           <div className='fs-container4-sub3-item2-insub2'>
+             <div className='fs-container4-sub3-item2-insub1-style2-style'>
+           <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+             </div>
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+             </div>
+           </div>
+
+           </div>
+         
+            <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+        
+         </div> */}
           
       </div>
     </div>

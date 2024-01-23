@@ -23,24 +23,12 @@ const Selfinfo = () => {
  
     
     
-    
+  
   
  
   
   
-  // useEffect(() => {
-  //       const buyData = async () => {
-  //        try {
-  //           const response1 = await axios.get('https://prepbytesclonebackend.onrender.com/bought');
-  //            Setboughtcourses(response1.data)
-             
-             
-  //        } catch (error) {
-  //          console.log(error);
-  //          }
-  //        };
-  //        buyData(); 
-  //           },[boughtcourses]);
+
 
   useEffect(() => {
     const interval=setInterval(async() => {
@@ -54,7 +42,7 @@ const Selfinfo = () => {
        }
      },1000);
      return () => clearInterval(interval);
-        },[]);
+        },[navigate]);
   const widthhandle={
               width: firsthandle ? '90px' : '300px',
 
@@ -75,12 +63,16 @@ const Selfinfo = () => {
       
         }
     const logoutbtn3= ()=>{
+          //localStorage.removeItem("token")
           localStorage.removeItem("selfname")
-          localStorage.clear()
+
+          
+          localStorage.clear("token")
           //localStorage.setItemItem('token',null)
           
-          window.location.reload(false)
-          navigate("/Login")
+          // window.location.reload(false)
+          //localStorage.setItem("accesskey",false)
+          navigate('/Login')
             
           
           
