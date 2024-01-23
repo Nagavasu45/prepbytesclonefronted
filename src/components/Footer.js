@@ -55,13 +55,13 @@ const Footer = () => {
     <div className='margin-align-1'>QUICK LINKS</div>
     
     <div className='margin-align-2'>
-    <NavLink className="footer-navlink-style">Interview Notes</NavLink><br/>
-    <NavLink className="footer-navlink-style">Mock Tests</NavLink><br/>
-    <NavLink className="footer-navlink-style">Placement</NavLink><br/>
-    <NavLink className="footer-navlink-style">Programs</NavLink><br/>
-    <NavLink className="footer-navlink-style">Coding Courses</NavLink><br/>
-    <NavLink className="footer-navlink-style">About Us</NavLink><br/>
-    <NavLink className="footer-navlink-style">Blog</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Mocktests">Mock Tests</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Videotuto">Video Tutorial</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Master">Master Compitative Programming</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Fullstack">Full Stack</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Elevationacedemy">Elevationacedemy</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Nodejsprojects">Node js projects</NavLink><br/>
+    <NavLink className="footer-navlink-style" to="/Reactjsprojects">Blog</NavLink><br/>
     </div>
     
     

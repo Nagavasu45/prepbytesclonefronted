@@ -25,7 +25,7 @@ import "../Interviewnotesstyles/mocktests.css"
 const Navbar = () => {
   const [navbar1,Setnavbar1]=useState(true)
     const [loginout, setloginout] = useState(false);
-     console.log(loginout) 
+    //  console.log(loginout) 
     const [barhide,Setbarhide]=useState(false)
     const navigate=useNavigate();
     const sty={
@@ -54,7 +54,7 @@ const Navbar = () => {
     },[token,navigate])
   
     useEffect(() => {
-      console.log(token)
+      // console.log(token)
       if (token) {
          
         console.log(token);
