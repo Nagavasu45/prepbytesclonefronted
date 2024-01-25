@@ -272,7 +272,7 @@
     position: absolute;
     right:2rem;
     top:2rem;
-    z-index: 9;
+    z-index: 90;
   }
   .header-logo{     
      
@@ -283,7 +283,7 @@
   display: none;
 }
 .barsmenu-lists1{
-  
+  display: block;
   width:250px;
   position: absolute;
   top:75px;
@@ -336,7 +336,7 @@
     position: absolute;
     right:10%;
     top:2rem;
-    z-index: 9;
+    z-index: 92;
   }
   .header-logo{     
      
@@ -347,13 +347,13 @@
   display: none;
 }
 .barsmenu-lists1{
-  
+  display: block;
   width:250px;
   position: absolute;
   top:75px;
   right:2rem;
   /* border: 1px solid black; */
-  z-index: 10;
+  z-index: 94;
   background-color: white;
 }
 .barsmenu-lists1-style{

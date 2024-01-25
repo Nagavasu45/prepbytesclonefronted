@@ -210,7 +210,7 @@
 @media screen and (min-width:340px) and (max-width:450px){
  .dashboard-navbar-container2{
     position: fixed;
-    display: none;
+    display: flex;
     justify-content: space-between;
     z-index:2;
     width: 100%;
@@ -219,6 +219,12 @@
     border: 1px solid transparent; 
     box-shadow: 0 4px 5px -0px rgba(0, 0, 0, 0.064);
     
+}
+.icon-handle-padding{
+  display:none;
+  padding-top: 23px;
+  text-align: left;
+  padding-left: 20px;
 }
 .numberofcourses-style{
   padding-top: 100px;

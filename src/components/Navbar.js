@@ -82,13 +82,15 @@ const Navbar = () => {
     Setnavbar1(true)
     
     
-    navigate('/Login')
+    navigate('/')
   }
   const dashboardhandle=()=>{
     Setnavbar1(false)
+    
   }
   const navbar1handle=()=>{
     Setnavbar1(true)
+    navigate("/")
   }
   const [boughtcourses, Setboughtcourses]=useState([])
   const [firsthandle, Setfirsthandle] = useState(false)
@@ -159,23 +161,24 @@ const Navbar = () => {
                                                        <button id='signup'><NavLink to='/Signup' className='text-style-navlink'>Sign up</NavLink></button></div>}
      </div>
      {loginout ?
-     (<><div className='barsmenu' >{barhide ? <FontAwesomeIcon icon={faXmark} onClick={barsmenuhandle}/>:<FontAwesomeIcon icon={FaBars} onClick={barsmenuhandle} /> } </div>
+     (<>
+     <div className='barsmenu' >{barhide ? <FontAwesomeIcon icon={faXmark} onClick={barsmenuhandle}/>:<FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> } </div>
       <div className='barsmenu-lists1' style={sty}>
       <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" onClick={navbar1handle}>Dashboard</NavLink></div> 
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo" onClick={dashboardhandle}>Dashboard</NavLink></div> 
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" >Elevation Academy</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" onClick={logoutbtn}>Logout</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
      </div>
      <div className='nav-bar-lists1'>
      
      <div className="dropdown">
      <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
      <div className="dropdown-content">
-         <NavLink to="/Interviewnotes">Interview Notes</NavLink>
+         {/* <NavLink to="/Interviewnotes">Interview Notes</NavLink> */}
          <NavLink to='/Mocktests'>Mock Tests</NavLink>
          
          <NavLink to="/Videotuto">Video Tutorials</NavLink>
@@ -222,10 +225,10 @@ const Navbar = () => {
 <div className="dropdown-content2">
 
    
- <NavLink  onClick={dashboardhandle} > Dashboard</NavLink>
+ <NavLink to="/Selfinfo" onClick={dashboardhandle} > Dashboard</NavLink>
  
   
-   <NavLink  onClick={logoutbtn}>Logout</NavLink >
+   <NavLink to="/" onClick={logoutbtn}>Logout</NavLink >
    
 </div>
 
@@ -251,7 +254,7 @@ const Navbar = () => {
      <div className="dropdown">
      <button className="dropbtn">Study Material <FontAwesomeIcon icon={faCaretDown} /></button>
      <div className="dropdown-content">
-         <NavLink to="/Interviewnotes">Interview Notes</NavLink>
+         {/* <NavLink to="/Interviewnotes">Interview Notes</NavLink> */}
          <NavLink to='/Mocktests'>Mock Tests</NavLink>
          
          <NavLink to="/Videotuto">Video Tutorials</NavLink>
@@ -290,7 +293,8 @@ const Navbar = () => {
      
      
    
- </div></>):(<>
+ </div></>):(
+ <>
  <div className='dashboard-navbar-container2'>
   <div className='header-container2'>
     <div className='dashboard-navbar-subitem1'>
@@ -302,25 +306,23 @@ const Navbar = () => {
                 <NavLink onClick={navbar1handle}><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt="not loaded " className='logo-size2'/></NavLink>
 
             </div>
+      <div className='barsmenu' >{barhide ? <FontAwesomeIcon icon={faXmark} onClick={barsmenuhandle}/>:<FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> } </div>
+      <div className='barsmenu-lists1' style={sty}>
+      <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo" onClick={dashboardhandle}>Dashboard</NavLink></div> 
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
+     </div>
     </div>
     
    
         </div>
         
- {/* <div className="dropdown1">
-  <div className='dropbtn1'>
-    <div className="navbar-naming-styles">
-    <div className="text-round-style2">{localname[0].toUpperCase()}</div>
-    <div className="naming-style"><span>Hi </span>{localname} </div>
-  </div>
-  
-  </div>
-   <div className="dropdown-content1">
-  <button className='navbar-logout-btn1' ><NavLink > Courses</NavLink></button><br/>
-     <button  className='navbar-logout-btn1'><NavLink onClick={logoutbtn} >Logout</NavLink ></button>
-  </div>
-  
-  </div> */}
+ 
   <div className='nav-bar-lists1'>
   <div className="dropdown2">
 <div>
@@ -332,10 +334,10 @@ const Navbar = () => {
 <div className="dropdown-content2">
 
    
- <NavLink  onClick={dashboardhandle} > Dashboard</NavLink>
+ <NavLink to="/Selfinfo" onClick={dashboardhandle} > Dashboard</NavLink>
  
   
-   <NavLink  onClick={logoutbtn}>Logout</NavLink >
+   <NavLink to="/" onClick={logoutbtn}>Logout</NavLink >
    
 </div>
 
@@ -385,7 +387,8 @@ const Navbar = () => {
    
     {/* </div> */}
     </div>
-    </div></>)}
+    </div>
+    </>)}
     {/* <div className='home-main-container-1'>
      
         <div className='header-container'>
