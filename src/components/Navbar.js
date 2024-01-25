@@ -166,11 +166,11 @@ const Navbar = () => {
       <div className='barsmenu-lists1' style={sty}>
       <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo" onClick={dashboardhandle}>Dashboard</NavLink></div> 
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests' onClick={dashboardhandle}>Mock Tests</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto" onClick={dashboardhandle}>Video Tutorials</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master" onClick={dashboardhandle}>Master Competitive Programming</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack" onClick={dashboardhandle}>Full Stack Program</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" onClick={dashboardhandle}>Elevation Academy</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
      </div>
      <div className='nav-bar-lists1'>
@@ -310,11 +310,11 @@ const Navbar = () => {
       <div className='barsmenu-lists1' style={sty}>
       <div onClick={handleaction}><NavLink className="barsmenu-lists1-style" >Hi,{localStorage.getItem("selfname")}</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Selfinfo" onClick={dashboardhandle}>Dashboard</NavLink></div> 
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests'>Mock Tests</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto">Video Tutorials</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
-       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to='/Mocktests' onClick={dashboardhandle}>Mock Tests</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Videotuto" onClick={dashboardhandle}>Video Tutorials</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master" onClick={dashboardhandle}>Master Competitive Programming</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack" onClick={dashboardhandle}>Full Stack Program</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" onClick={dashboardhandle}>Elevation Academy</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
      </div>
     </div>
