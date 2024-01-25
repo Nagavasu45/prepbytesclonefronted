@@ -303,7 +303,7 @@ const Navbar = () => {
     </div>
     <div className='header-logo2'>
       
-                <NavLink onClick={navbar1handle}><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt="not loaded " className='logo-size2'/></NavLink>
+                <NavLink to="/" onClick={navbar1handle}><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt="not loaded " className='logo-size2'/></NavLink>
 
             </div>
       <div className='barsmenu' >{barhide ? <FontAwesomeIcon icon={faXmark} onClick={barsmenuhandle}/>:<FontAwesomeIcon icon={faBars} onClick={barsmenuhandle} /> } </div>
