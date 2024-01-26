@@ -54,7 +54,7 @@ const RouteCompo = () => {
     <Route path='/Fullstack' element={<Fullstack />}/>
     <Route path='/Htmlprojects' element={<Htmlprojects />}/>
     <Route path='/Cssprojects'  element={<Cssprojects />}/>
-    <Route path='/Javascript' element={<Javascriptprojects />}/>
+    <Route path='/Javascriptprojects' element={<Javascriptprojects />}/>
     <Route path='/Mongodbprojects' element={<Mongodbprojects />}/>
     <Route path='/Reactjsprojects' element={<Reactjsprojects />}/>
     <Route path='/Nodejsprojects' element={<Nodejsprojects />}/>
