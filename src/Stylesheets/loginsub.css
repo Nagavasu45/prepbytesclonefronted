@@ -41,7 +41,7 @@
     padding: 20px;
 }
 .login-sub-button1-style{
-  width:100%;
+  width:300px;
   height:40px;
   
   background-color:rgb(114, 114, 248) ;
@@ -51,7 +51,7 @@
 }
 .login-sub-button2-style{
   margin-top:10px;
-  width:90%;
+  width:300px;
   height:40px;
   background-color:rgb(232, 232, 244) ;
   border-radius: 5px;
@@ -63,22 +63,51 @@
 /*--------------340 to 450px-------------------------------------------------------------*/
 
 @media screen and (min-width:340px) and (max-width:450px){
-  .login-sub-con-compo-style1{
-    /* width:80%; */
-    /* height:550px; */
-    width :100%;
-    background-color: white;
-    border: 1px solid black;
-    margin:auto;
-    
-    text-align: left;
-    
+  .login-sub-con-compo-1{
+    align-items: center;
+    color:rgba(0, 0, 0, 0.907);  
 }
-.btn1-width{
-  width :100%;
+.btn1{
+  margin-top: 30px;
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  /* border:none; */
+  background-color: white;
+}
+.btn2{
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 40%;
+  height: 50px;
+  /* border: none; */
+  background-color: white;
+}
+.login-signup-width{
+  background-color: white;
+  width: 100%;
+}
+
+.login-sub-con-compo-1 input{
+  border-left: none;
+  border-right: none;
+  border-top:none;
+  width:90%;
+  height:30px;
+  color:rgba(0, 0, 0, 0.907);
+
+}
+.login-sub-con-compo-style1{
+    width:340px;
+    /* height:550px; */
+    background-color: white;
+    margin:auto;
+    text-align: left;
+    padding: 20px;
 }
 .login-sub-button1-style{
-  width:250px;
+  width:300px;
   height:40px;
   
   background-color:rgb(114, 114, 248) ;
@@ -88,18 +117,14 @@
 }
 .login-sub-button2-style{
   margin-top:10px;
-  width:80%;
+  width:300px;
   height:40px;
   background-color:rgb(232, 232, 244) ;
   border-radius: 5px;
   border: none;
 }
-.login-sub-con-compo-1{
-  align-items: center;
-  color:rgba(0, 0, 0, 0.907);
-  width:300px;
-  
-
+.btn1-width-style{
+  width:90%;
 }
   
 

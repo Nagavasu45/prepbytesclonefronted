@@ -171,6 +171,12 @@ const Navbar = () => {
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master" onClick={dashboardhandle}>Master Competitive Programming</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack" onClick={dashboardhandle}>Full Stack Program</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" onClick={dashboardhandle}>Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Htmlprojects" onClick={dashboardhandle}>Html projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Cssprojects" onClick={dashboardhandle}>CSS projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Javascriptprojects" onClick={dashboardhandle}>JavaScript projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Reactprojects" onClick={dashboardhandle}>React projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Nodeprojects" onClick={dashboardhandle}>Node projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Mongodbprojects" onClick={dashboardhandle}>MongoDB projects</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
      </div>
      <div className='nav-bar-lists1'>
@@ -247,6 +253,12 @@ const Navbar = () => {
        <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Master">Master Competitive Programming</NavLink></div>
        <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Fullstack">Full Stack Program</NavLink></div>
        <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2"  to="/Elevationacedemy" >Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Htmlprojects" onClick={dashboardhandle}>Html projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Cssprojects" onClick={dashboardhandle}>CSS projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Javascriptprojects" onClick={dashboardhandle}>JavaScript projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Reactprojects" onClick={dashboardhandle}>React projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Nodeprojects" onClick={dashboardhandle}>Node projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Mongodbprojects" onClick={dashboardhandle}>MongoDB projects</NavLink></div>
        <div className="barsmenu-lists1-style" onClick={handleaction}><NavLink className="barsmenu-lists1-style2" to="/Login" >Login/Signup</NavLink></div>
      </div>
       <div className='nav-bar-lists'>
@@ -315,6 +327,13 @@ const Navbar = () => {
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Master" onClick={dashboardhandle}>Master Competitive Programming</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack" onClick={dashboardhandle}>Full Stack Program</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Elevationacedemy" onClick={dashboardhandle}>Elevation Academy</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Fullstack" onClick={dashboardhandle}>Full Stack Program</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Htmlprojects" onClick={dashboardhandle}>Html projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Cssprojects" onClick={dashboardhandle}>CSS projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Javascriptprojects" onClick={dashboardhandle}>JavaScript projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Reactprojects" onClick={dashboardhandle}>React projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Nodeprojects" onClick={dashboardhandle}>Node projects</NavLink></div>
+       <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/Mongodbprojects" onClick={dashboardhandle}>MongoDB projects</NavLink></div>
        <div onClick={handleaction} className="barsmenu-lists1-style"><NavLink  className="barsmenu-lists1-style2" to="/" onClick={logoutbtn}>Logout</NavLink></div>
      </div>
     </div>
