@@ -1,7 +1,78 @@
 import React from 'react'
-
+import { loadStripe } from '@stripe/stripe-js'
 import "../courseandprogramstyle/mcp.css"
 const Master = () => {
+  let courseenroll=[{ 
+     
+    id:41,
+    catdivd:"companytests",
+    nameofthecourse:"Full Stack", 
+    imgsrc:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/mcafee.svg",
+    date:"Feb 1st ",
+    cat1:"Date",
+    participants:1101,
+    cat2:"Participants",
+    duration:"60 min",
+    cat3:"Duration",
+    price:250000.00
+}]
+const course1handle=()=>{
+  courseenroll[0]['date']="Feb 1st";
+  console.log(courseenroll)
+}
+const course2handle=()=>{
+  courseenroll[0]['date']="Feb 15nth";
+  console.log(courseenroll)
+}
+const checkitem=()=>{
+    
+                  
+  courseenroll[0]['useremail']=localStorage.getItem("selfdetails")
+  return [courseenroll[0]]
+
+
+
+
+}
+const   doenroll=async (id)=>{
+const result=await checkitem()
+
+
+
+const stripe=await loadStripe(" pk_test_51OMERySJb30zHYKXhazWu96YHeq9esM7jjoHRU5Yl6OsFBFrIqAN4l6DR432lstZ8S1BEgMXk05yGcoIoqcZQ0FJ00fJW2eWVM")
+const body={
+products:result
+}
+const headers={
+"content-Type":"application/json"
+}
+try {
+const response = await fetch("https://prepbytesclonebackend.onrender.com/createcheckout1", {
+method: "POST",
+headers: headers,
+body: JSON.stringify(body),
+});
+
+if (!response.ok) {
+throw new Error(`HTTP error! Status: ${response.status}`);
+}
+
+const session = await response.json();
+console.log(session);
+
+const result = await stripe.redirectToCheckout({
+sessionId: session.id,
+});
+
+
+if (result.error) {
+console.log(result.error);
+}
+} catch (error) {
+console.error("Fetch error:", error);
+}
+
+}
   return (
     
         <div className='master-main-container'>
@@ -207,6 +278,12 @@ const Master = () => {
        <div className='master-body-container9'>Crack Reputed Coding Contests<br/>
        <div><img className='master-body-container9-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/MCP-company-new.webp'  alt='not-loaded'/></div>
        </div>
+       <div className='fs-container2'>
+      <div className='fs-container2-item1'>SELECT BATCH</div>
+      <div className='fs-container2-item2' onClick={course1handle}><input type='radio' name='dates'/>1st Feb<div className='fs-container2-item3'>Enrolment Started</div></div>
+      <div className='fs-container2-item2' onClick={course2handle}><input type='radio' name='dates'/>15nth Feb<div className='fs-container2-item3'>Enrolment Started</div></div>
+      <div className='fs-container2-item5'>25000 RS/- <br/> <button className='fs-container2-item4' onClick={doenroll}>Enroll Now</button></div>
+    </div>
        <div className='master-body-container10'>This Might Be You!</div>
        <div className='master-body-container11'>By The End Of This Course, You Will Be Able To
        <div className='master-body-container11-sub-container'>

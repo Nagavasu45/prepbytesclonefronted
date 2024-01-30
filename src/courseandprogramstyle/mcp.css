@@ -1,3 +1,48 @@
+.fs-container2{
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height:150px;
+  /* border: 1px solid black; */
+}
+.fs-container2-item1{
+ font-size: 28px;
+ padding-top: 60px;
+ margin-right: 20px;
+}
+.fs-container2-item2{
+ background-color: white;
+ padding-left: 20px;
+ border-radius: 5px;
+ text-align: left;
+ height:80px;
+ font-size: 24px;
+ margin-top: 40px;
+ width:200px;
+ margin-right: 20px;
+}
+.fs-container2-item3{
+ 
+ font-size: 16px;
+ padding-top: 10px;
+ color: rgb(253, 148, 109);
+}
+.fs-container2-item4{
+ height:25px;
+ border: none;
+ border-radius: 5px;
+ font-size: 18px;
+ background-color: rgb(176, 186, 243);
+ color: white;
+ margin-right: 20px;
+}
+.fs-container2-item5{
+ font-size: 20px;
+ padding-top: 40px;
+ color: rgb(253, 148, 109);
+ padding-bottom: 30px;
+}
 .master-main-container{
     padding-top: 75px;
     padding-left:12%;

@@ -16,10 +16,10 @@ const Htmlprojects = () => {
       
       <div className='html-container2-sub1'>
         Host Link:
-        <div className='html-container2-sub1-item1'>https://nagavasu45.github.io/projecthtml/</div>
+        <div className='html-container2-sub1-item1'><a href='https://nagavasu45.github.io/projecthtml/' target='_blank' rel="noopener noreferrer">https://nagavasu45.github.io/projecthtml/</a></div>
         Repo Link:
         <div className='html-container2-sub1-item2'>
-          https://github.com/Nagavasu45/projecthtml</div>
+          <a href='https://github.com/Nagavasu45/projecthtml' target='_blank' rel="noopener noreferrer" >https://github.com/Nagavasu45/projecthtml</a></div>
       </div>
       <div className='html-container2-sub2'>
         <div className='html-container2-sub2-text1'>
