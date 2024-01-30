@@ -7,7 +7,7 @@ const Master = () => {
     id:41,
     catdivd:"companytests",
     nameofthecourse:"Full Stack", 
-    imgsrc:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/mcafee.svg",
+    imgsrc:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1663573579324-Aptitude%20Based%20Test%202%20icon.svg",
     date:"Feb 1st ",
     cat1:"Date",
     participants:1101,
