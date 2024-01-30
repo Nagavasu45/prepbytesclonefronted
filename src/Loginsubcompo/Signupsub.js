@@ -30,9 +30,9 @@ const Signupsub = () => {
             console.log(res.data)
             
             if (res.data.msg === "user successfully registered") {
-              localStorage.setItem('token',res.data.token)
+              // localStorage.setItem('token',res.data.token)
     
-              console.log(res.data.token)
+              // console.log(res.data.token)
               
               alert(res.data.msg)
           }
