@@ -18,11 +18,11 @@ const Mongodbprojects = () => {
         
         <div className='html-container2-sub1'>
           Host Link:
-          <div className='html-container2-sub1-item1'>https://earnest-buttercream-28d49b.netlify.app/
+          <div className='html-container2-sub1-item1'><a href='https://earnest-buttercream-28d49b.netlify.app/' target='_blank' rel="noopener noreferrer"> https://earnest-buttercream-28d49b.netlify.app/</a>
           </div>
           Repo Link:
           <div className='html-container2-sub1-item2'>
-            https://github.com/Nagavasu45/projecthtml</div>
+           <a href=' https://github.com/Nagavasu45/projecthtml' target='_blank' rel="noopener noreferrer" >https://github.com/Nagavasu45/projecthtml</a></div>
         </div>
         <div className='html-container2-sub2'>
           <div className='html-container2-sub2-text1'>

@@ -18,10 +18,10 @@ const Nodejsprojects = () => {
         
         <div className='html-container2-sub1'>
           Host Link:
-          <div className='html-container2-sub1-item1'>https://luxury-beijinho-1b228a.netlify.app/</div>
+          <div className='html-container2-sub1-item1'><a href='https://luxury-beijinho-1b228a.netlify.app/' target='_blank' rel="noopener noreferrer">https://luxury-beijinho-1b228a.netlify.app/</a></div>
           Repo Link:
           <div className='html-container2-sub1-item2'>
-          https://github.com/Nagavasu45/reactsiren</div>
+            <a href='https://github.com/Nagavasu45/reactsiren' target='_blank' rel="noopener noreferrer">https://github.com/Nagavasu45/reactsiren</a></div>
         </div>
         <div className='html-container2-sub2'>
           <div className='html-container2-sub2-text1'>

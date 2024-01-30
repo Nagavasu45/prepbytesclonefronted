@@ -16,10 +16,10 @@ const Cssprojects = () => {
       
       <div className='html-container2-sub1'>
         Host Link:
-        <div className='html-container2-sub1-item1'>https://nagavasu45.github.io/csshtmlproject1/</div>
+        <div className='html-container2-sub1-item1'><a href='https://nagavasu45.github.io/csshtmlproject1/' target='_blank' rel="noopener noreferrer">https://nagavasu45.github.io/csshtmlproject1/</a></div>
         Repo Link:
         <div className='html-container2-sub1-item2'>
-        https://github.com/Nagavasu45/csshtmlproject1</div>
+       <a href=' https://github.com/Nagavasu45/csshtmlproject1' target='_blank' rel="noopener noreferrer">https://github.com/Nagavasu45/csshtmlproject1</a></div>
       </div>
       <div className='html-container2-sub2'>
         <div className='html-container2-sub2-text1'>

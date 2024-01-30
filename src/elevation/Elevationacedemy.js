@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../Stylesheets/elevation.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faRightLong } from '@fortawesome/free-solid-svg-icons';
+import { loadStripe } from '@stripe/stripe-js';
 const Elevationacedemy = () => {
   const [handleplus1,Sethandleplus1]=useState(true);
   const firsthandle=()=>{
@@ -103,6 +104,69 @@ const ele22plus3=()=>{
 const [plus4,Setplus4]=useState(false)
 const ele22plus4=()=>{
   Setplus4(!plus4)
+}
+let courseenroll=[{ 
+     
+  id:41,
+  catdivd:"companytests",
+  nameofthecourse:"Data Analyst", 
+  imgsrc:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/mcafee.svg",
+  date:"Feb 15nth ",
+  cat1:"Date",
+  participants:1101,
+  cat2:"Participants",
+  duration:"60 min",
+  cat3:"Duration",
+  price:7000000.00
+}]
+const checkitem=()=>{
+    
+                  
+  courseenroll[0]['useremail']=localStorage.getItem("selfdetails")
+  return [courseenroll[0]]
+
+
+
+
+}
+const   doenroll=async (id)=>{
+const result=await checkitem()
+
+
+
+const stripe=await loadStripe(" pk_test_51OMERySJb30zHYKXhazWu96YHeq9esM7jjoHRU5Yl6OsFBFrIqAN4l6DR432lstZ8S1BEgMXk05yGcoIoqcZQ0FJ00fJW2eWVM")
+const body={
+products:result
+}
+const headers={
+"content-Type":"application/json"
+}
+try {
+const response = await fetch("https://prepbytesclonebackend.onrender.com/createcheckout1", {
+method: "POST",
+headers: headers,
+body: JSON.stringify(body),
+});
+
+if (!response.ok) {
+throw new Error(`HTTP error! Status: ${response.status}`);
+}
+
+const session = await response.json();
+console.log(session);
+
+const result = await stripe.redirectToCheckout({
+sessionId: session.id,
+});
+
+
+if (result.error) {
+console.log(result.error);
+}
+} catch (error) {
+console.error("Fetch error:", error);
+}
+
 }
 
   return (<>
@@ -788,7 +852,7 @@ const ele22plus4=()=>{
         <div className='ele-container14-sub1-text3'>₹ 5833<span>/month</span></div>
         <div className='ele-container14-sub1-text5'><img className='ele-container14-sub1-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/tag4-01.webp' alt='not-loaded'/></div>
       </div>
-      <div><button className='ele-container14-text3'>Register</button></div>
+      <div><button className='ele-container14-text3' onClick={doenroll}>Register</button></div>
       <div className='ele-container14-text4'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS45OTgiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNS45OTggMTYiPgogIDxwYXRoIGlkPSJJY29uX2F3ZXNvbWUtY2hlY2stZG91YmxlIiBkYXRhLW5hbWU9Ikljb24gYXdlc29tZS1jaGVjay1kb3VibGUiIGQ9Ik0xNS43NzcsNS40NjEsMTQuNTQsNC4yMjNhLjc0Ny43NDcsMCwwLDAtMS4wNTksMEw2LDExLjcwNywyLjUxNiw4LjIyM2EuNzQ3Ljc0NywwLDAsMC0xLjA1OSwwTC4yMTcsOS40NjNhLjc1MS43NTEsMCwwLDAsMCwxLjA2Mmw1LjI0OSw1LjI1MmEuNzQ3Ljc0NywwLDAsMCwxLjA1OSwwbDkuMjQ5LTkuMjU1QS43NTMuNzUzLDAsMCwwLDE1Ljc3Nyw1LjQ2MVpNNS42NDQsOC43NzNhLjUuNSwwLDAsMCwuNzA2LDBsNi41LTYuNTA1YS41LjUsMCwwLDAsMC0uNzA2TDExLjQzNy4xNDZhLjUuNSwwLDAsMC0uNzA2LDBMNiw0Ljg3OSw0LjI2NiwzLjE0NWEuNS41LDAsMCwwLS43MDYsMEwyLjE0NSw0LjU2MWEuNS41LDAsMCwwLDAsLjcwNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDA0IDAuMDAyKSIgZmlsbD0iI2Y3ODA3NyIvPgo8L3N2Zz4K' alt='not-loaded'/>Guaranteed Placement of minimum 5 LPA</div>
   </div>
   <div className='ele-container16'>

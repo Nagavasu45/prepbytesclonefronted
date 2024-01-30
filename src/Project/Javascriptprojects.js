@@ -16,10 +16,10 @@ const Javascriptprojects = () => {
       
       <div className='html-container2-sub1'>
         Host Link:
-        <div className='html-container2-sub1-item1'>https://nagavasu45.github.io/digital_clock/</div>
+        <div className='html-container2-sub1-item1'><a href='https://nagavasu45.github.io/digital_clock/' target='_blank' rel="noopener noreferrer">https://nagavasu45.github.io/digital_clock/</a></div>
         Repo Link:
         <div className='html-container2-sub1-item2'>
-        https://github.com/Nagavasu45/digital_clock</div>
+        <a href='https://github.com/Nagavasu45/digital_clock' target='_blank' rel="noopener noreferrer">https://github.com/Nagavasu45/digital_clock</a></div>
       </div>
       <div className='html-container2-sub2'>
         <div className='html-container2-sub2-text1'>
